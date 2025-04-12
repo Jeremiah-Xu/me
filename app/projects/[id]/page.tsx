@@ -80,16 +80,9 @@ const projectsData = {
         display: "half",
         alt: "Detailed concept art 7"
       },
-      
     ],
     category: "SECURITY",
-    technologies: [
-      "Photoshop",
-      "Zbrush",
-      "Blender",
-      "Concept Art",
-      "",
-    ],
+    technologies: ["Photoshop", "Zbrush", "Blender", "Concept Art"],
     features: [
       "Instantaneous breach detection",
       "Zero-latency communication",
@@ -101,7 +94,14 @@ const projectsData = {
   },
 }
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
+export async function generateStaticParams() {
+  const projectIds = Object.keys(projectsData);
+  return projectIds.map((id) => ({
+    id,
+  }));
+}
+
+export default async function ProjectPage({ params }: { params: { id: string } }) {
   const project = projectsData[params.id as keyof typeof projectsData];
 
   if (!project) {
@@ -214,13 +214,14 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                       className="w-full h-auto object-cover"
                     />
                   ) : media.type === "youtube" ? (
-                    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                    <div className="relative w-full aspect-video">
                       <iframe
                         src={`https://www.youtube.com/embed/${media.src.split('v=')[1]}`}
                         className="absolute top-0 left-0 w-full h-full"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
+                        title={media.alt}
                       />
                     </div>
                   ) : (
@@ -252,11 +253,5 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
       <Footer />
     </div>
   );
-}
-
-export async function generateStaticParams() {
-  return Object.keys(projectsData).map((id) => ({
-    id,
-  }));
 }
 
