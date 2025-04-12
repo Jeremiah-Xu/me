@@ -13,6 +13,8 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // ✅ This is required for static hosting (like GitHub Pages or Cloudflare)
+
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -28,6 +30,7 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
 }
+
 
 if (userConfig) {
   // ESM imports will have a "default" property

@@ -254,3 +254,9 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
   );
 }
 
+export async function generateStaticParams() {
+  return Object.keys(projectsData).map((id) => ({
+    id,
+  }));
+}
+
