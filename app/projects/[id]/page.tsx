@@ -9,15 +9,51 @@ import { Header } from "@/components/header"
 const projectsData = {
   "DR-Space": {
     title: "Dream Realm Space Escape",
-    description: "Brain-computer interface with holographic display",
+    description: "3D Space Shooter Game Made with Unity",
     fullDescription:
-      "The Neural Interface is a cutting-edge brain-computer interface that allows direct communication between the human brain and digital systems. Using advanced neural mapping and quantum computing, this system creates a seamless connection that feels like a natural extension of human thought. The holographic display projects information directly into the user's field of vision, creating an immersive augmented reality experience without the need for external devices.",
+      "This game is an evolution of my earlier concept, Dream Realm. Rather than playing as a human character within the dream world, the player now takes on the role of a plane pilot navigating through multiple dream dimensions, striving to find the cognitive pathway that leads to awakening from the dream realm.",
     images: [
       {
         src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
         type: "youtube",
         display: "full",
         alt: "DR-Space gameplay video"
+      },
+      {
+        src: "/DRspace/s1.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s2.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s3.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s6.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s4.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s5.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
       },
     ],
     category: "GAME",
@@ -139,7 +175,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
                 <div className="text-neon-blue text-sm tracking-widest uppercase mb-2">
                   {project.category}
                 </div>
-                <h1 className="text-4xl md:text-6xl font">{project.title}</h1>
+                <h1 className="font-cyber text-4xl md:text-5xl">{project.title}</h1>
 
                 <p className="text-xl text-muted-foreground">{project.description}</p>
                 <p className="mt-6">{project.fullDescription}</p>
@@ -199,9 +235,9 @@ export default async function ProjectPage({ params }: { params: { id: string } }
             <h2 className="text-2xl font-bold">Gallery</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {project.images.map((media, index) => (
-                <div
+                <div pd-10
                   key={index}
-                  className={`relative overflow-hidden rounded-lg ${
+                  className={`p-10 relative overflow-hidden rounded-lg ${
                     media.display === "full" ? "md:col-span-2" : "md:col-span-1"
                   }`}
                 >
