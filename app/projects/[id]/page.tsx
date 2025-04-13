@@ -75,6 +75,30 @@ const projectsData = {
       "The main character, Jezza, wields a weapon nicknamed “Coffin”—a mysterious material capable of transforming into any form he can imagine. Unbound by the limitations of the physical world, it grants him near-limitless power. Below are several variations of combat outfits and weapon forms Jezza may equip.",
     images: [
       {
+        src: "/DR/DR-X.png",
+        type: "image",
+        display: "half",
+        alt: "Detailed concept art"
+      },
+      {
+        src: "/DR/DR-Y.png",
+        type: "image",
+        display: "half",
+        alt: "Detailed concept art"
+      },
+      {
+        src: "/DR/DR-Z.png",
+        type: "image",
+        display: "half",
+        alt: "Detailed concept art"
+      },
+      {
+        src: "/DR/DR-D.png",
+        type: "image",
+        display: "half",
+        alt: "Detailed concept art"
+      },
+      {
         src: "/DR/X.jpeg",
         type: "image",
         display: "full",
@@ -115,6 +139,24 @@ const projectsData = {
         type: "image",
         display: "half",
         alt: "Detailed concept art 7"
+      },
+      {
+        src: "/DR/DR-landscape1.png",
+        type: "image",
+        display: "half",
+        alt: "Detailed concept art"
+      },
+      {
+        src: "/DR/DR-landscape2.jpg",
+        type: "image",
+        display: "half",
+        alt: "Detailed concept art"
+      },
+      {
+        src: "/DR/DR-landscape3.jpg",
+        type: "image",
+        display: "full",
+        alt: "Detailed concept art"
       },
     ],
     category: "Concept Art",
