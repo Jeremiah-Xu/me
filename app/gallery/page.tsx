@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -7,7 +6,8 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArtworkCard } from "@/components/artwork-card"
 import { motion } from "framer-motion"
 
-// Sample artwork data
+
+// Your artwork data here...
 const artworks = [
   // Fine Arts
   {
@@ -140,6 +140,7 @@ const artworks = [
     image: "/DR/DR-X.png",
     year: "2023",
     medium: "Ditial(Photoshop)",
+    project: "DR-Concept"
   },
   {
     id: 14,
@@ -149,6 +150,7 @@ const artworks = [
     image: "/DR/DR-Y.png",
     year: "2023",
     medium: "Ditial(Photoshop)",
+    project: "DR-Concept"
   },
   {
     id: 15,
@@ -158,6 +160,7 @@ const artworks = [
     image: "/DR/DR-Z.png",
     year: "2023",
     medium: "Ditial(Photoshop)",
+    project: "DR-Concept"
   },
   {
     id: 16,
@@ -167,6 +170,7 @@ const artworks = [
     image: "/DR/DR-D.png",
     year: "2023",
     medium: "Ditial(Photoshop)",
+    project: "DR-Concept"
   },
   {
     id: 17,
@@ -176,6 +180,7 @@ const artworks = [
     image: "/DR/DR-landscape1.png",
     year: "2023",
     medium: "Ditial(Photoshop)",
+    project: "DR-Concept"
   },
   {
     id: 18,
@@ -185,6 +190,7 @@ const artworks = [
     image: "/DR/DR-landscape2.jpg",
     year: "2022",
     medium: "Ditial(Photoshop)",
+    project: "DR-Concept"
   },
   {
     id: 19,
@@ -194,6 +200,7 @@ const artworks = [
     image: "/DR/DR-landscape3.jpg",
     year: "2022",
     medium: "3D printed architectural model with electronics",
+    project: "DR-Concept"
   },
   {
     id: 20,
@@ -204,6 +211,7 @@ const artworks = [
     mediaType: "video",
     year: "2023",
     medium: "Zbrush",
+    project: "DR-Concept"
   },
   {
     id: 21,
@@ -214,6 +222,7 @@ const artworks = [
     mediaType: "video",
     year: "2023",
     medium: "Zbrush",
+    project: "DR-Concept"
   },
   {
     id: 22,
@@ -224,6 +233,7 @@ const artworks = [
     mediaType: "video",
     year: "2023",
     medium: "Blender&Zbrush",
+    project: "DR-Concept"
   },
   // {
   //   id: 23,
@@ -311,7 +321,9 @@ export default function GalleryPage() {
               >
                 {filteredArtworks.map((artwork) => (
                   <motion.div key={artwork.id} variants={item}>
-                    <ArtworkCard artwork={artwork} />
+                    <div>
+                      <ArtworkCard artwork={artwork} />
+                    </div>
                   </motion.div>
                 ))}
               </motion.div>
@@ -323,3 +335,4 @@ export default function GalleryPage() {
     </div>
   )
 }
+

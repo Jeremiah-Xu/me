@@ -33,7 +33,7 @@ export default function ContactPage() {
                 </div>
                 <div className="space-y-1">
                   <h3 className="font-medium">Instagram</h3>
-                  <p className="text-muted-foreground">JX2089370781</p>
+                  <p className="text-muted-foreground">@jezzaxu</p>
                 </div>
                 {/* <div className="space-y-1">
                   <h3 className="font-medium">Studio Address</h3>

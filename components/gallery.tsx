@@ -150,6 +150,7 @@ function ArtworkCard({ artwork }: ArtworkCardProps) {
             <h3 className="font-semibold">{artwork.title}</h3>
             <p className="text-sm text-muted-foreground">{artwork.description}</p>
           </div>
+          
         </Card>
       </DialogTrigger>
       <DialogContent className="max-w-2xl">

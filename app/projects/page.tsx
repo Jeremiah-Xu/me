@@ -2,6 +2,7 @@ import { ProjectCard } from "@/components/project-card"
 import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
 
+
 const projects = [
   {
     id: "DR-Space",
@@ -16,13 +17,6 @@ const projects = [
     description: "Unhackable communication protocol using quantum entanglement",
     image: "/DR/DRZb.png",
     category: "CONCEPT ART",
-  },
-  {
-    id: "augmented-reality",
-    title: "AR Overlay",
-    description: "City-wide augmented reality information system",
-    image: "/placeholder.svg?height=400&width=300",
-    category: "SOFTWARE",
   },
 ]
 

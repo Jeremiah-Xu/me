@@ -11,7 +11,7 @@ const projectsData = {
     title: "Dream Realm Space Escape",
     description: "3D Space Shooter Game Made with Unity",
     fullDescription:
-      "This game is an evolution of my earlier concept, Dream Realm. Rather than playing as a human character within the dream world, the player now takes on the role of a plane pilot navigating through multiple dream dimensions, striving to find the cognitive pathway that leads to awakening from the dream realm.",
+      "This game expands upon my earlier concept, Dream Realm. Instead of controlling a human within the dream world, players now assume the role of a plane pilot traversing diverse dream dimensions, seeking the elusive cognitive pathway that leads to awakening. The entire game was independently designed and developed.",
     images: [
       {
         src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
@@ -57,22 +57,22 @@ const projectsData = {
       },
     ],
     category: "GAME",
-    technologies: ["Unity", "Blender", "Concept Art", "Game Design"],
+    technologies: ["Unity", "Blender", "figma", "Concept Art", "Game Design"],
     features: [
-      "Thought-based control of digital systems",
-      "Real-time neural feedback",
-      "Holographic data visualization",
-      "Emotional state monitoring",
-      "Memory enhancement capabilities",
+      "Unity Camera System",
+      "Outer Space Environment",
+      "Free-roam flight in 3D space",
+      "Shields, hull damage, and repair mechanics",
+      "Customization & Upgrades",
     ],
     year: "2025",
   },
 
   "DR-Concept": {
     title: "Dream Realm Concept Art",
-    description: "Unhackable communication protocol using quantum entanglement",
+    description: "A world shared by all through dreams, yet forgotten upon waking",
     fullDescription:
-      "The Quantum Encryption project leverages the principles of quantum entanglement to create an unhackable communication system. By utilizing entangled particle pairs, any attempt to intercept the communication automatically alters the quantum state, immediately alerting both sender and receiver to the breach. This technology represents a paradigm shift in secure communications, making traditional encryption methods obsolete.",
+      "The main character, Jezza, wields a weapon nicknamed “Coffin”—a mysterious material capable of transforming into any form he can imagine. Unbound by the limitations of the physical world, it grants him near-limitless power. Below are several variations of combat outfits and weapon forms Jezza may equip.",
     images: [
       {
         src: "/DR/X.jpeg",
@@ -117,16 +117,15 @@ const projectsData = {
         alt: "Detailed concept art 7"
       },
     ],
-    category: "SECURITY",
+    category: "Concept Art",
     technologies: ["Photoshop", "Zbrush", "Blender", "Concept Art"],
     features: [
-      "Instantaneous breach detection",
-      "Zero-latency communication",
-      "Quantum key generation",
-      "Cross-continental secure channels",
-      "Military-grade security protocols",
+      "Conceptual Charatcer Design",
+      "3D Hardsurface Modelling",
+      "Landscape Design",
+      "Illustration",
     ],
-    year: "2022",
+    year: "2023",
   },
 }
 
@@ -232,10 +231,10 @@ export default async function ProjectPage({ params }: { params: { id: string } }
 
           {/* Images Section */}
           <section className="space-y-8">
-            <h2 className="text-2xl font-bold">Gallery</h2>
+            <h2 className="text-2xl p-10 font-bold">Gallery</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {project.images.map((media, index) => (
-                <div pd-10
+                <div p-10="true"
                   key={index}
                   className={`p-10 relative overflow-hidden rounded-lg ${
                     media.display === "full" ? "md:col-span-2" : "md:col-span-1"

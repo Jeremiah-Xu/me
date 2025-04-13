@@ -3,6 +3,9 @@ import Image from "next/image"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Badge } from "@/components/ui/badge"
 import { Expand } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 
 interface ArtworkCardProps {
   artwork: {
@@ -14,6 +17,7 @@ interface ArtworkCardProps {
     year: string
     medium: string
     mediaType?: "image" | "video"
+    project?: string // Add project field
   }
 }
 
@@ -112,6 +116,17 @@ export function ArtworkCard({ artwork }: ArtworkCardProps) {
                 <span className="text-sm text-muted-foreground">Medium</span>
                 <span className="text-sm">{artwork.medium}</span>
               </div>
+            </div>
+            
+            <div className="p-20">
+            {artwork.project === "DR-Concept" && (
+              <Link href={`/projects/${artwork.project}`} passHref>
+                <Button variant="outline" className="border-neon-pink text-neon-pink">
+                  <ArrowRight className="mr-2 h-4 w-4" />
+                  Dream Realm Project
+                </Button>
+              </Link>
+            )}
             </div>
           </div>
         </div>
