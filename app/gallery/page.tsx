@@ -14,10 +14,10 @@ interface Artwork {
   image: string
   year: string
   medium: string
-  size?: string
   mediaType?: "video" | "image"
   project?: string
   poster?: string
+  size?: string
 }
 
 // Your artwork data here...
@@ -26,219 +26,274 @@ const artworks: Artwork[] = [
   {
     id: 1,
     title: "Old Man with Enormous Wings",
-    // description: "Urban landscape with neon lighting",
+    description: "A surreal portrait exploring the intersection of reality and fantasy",
     type: "fine art",
     image: "/gallery/1.jpg",
     year: "2024",
     size: "60x50in",
-    medium: "Conte Crayon On Paper"
+    medium: "Conte Crayon On Paper",
+    mediaType: "image"
   },
   {
     id: 2,
     title: "Superimposed Self",
-    // description: "Abstract representation of human-machine interface",
+    description: "A self-portrait exploring the layers of identity and perception",
     type: "fine art",
     image: "/gallery/2.jpg",
     year: "2025",
     size: "60x40in",
-    medium: "Conte Crayon On Papers"
+    medium: "Conte Crayon On Papers",
+    mediaType: "image"
   },
   {
     id: 3,
     title: "Metropolitan Gaze II",
-    // description: "Portrait exploring AI consciousness",
+    description: "A study of urban life and human connection in the digital age",
     type: "fine art",
     image: "/gallery/3.jpg",
     year: "2024",
     size: "65x40in",
     medium: "Conte Crayon On Papers",
+    mediaType: "image"
   },
   {
     id: 4,
     title: "Blazing Sun",
-    // description: "Abstract visualization of information flow",
+    description: "An abstract representation of energy and transformation",
     type: "fine art",
     image: "/gallery/4.jpg",
     year: "2024",
     size: "60x45in",
     medium: "Oil on canvas",
+    mediaType: "image"
   },
 
   {
     id: 5,
     title: "Ups",
-    // description: "Digital visualization of AI thought processes",
+    description: "A dynamic composition exploring movement and balance",
     type: "fine art",
     image: "/gallery/5.jpg",
     year: "2022",
     size: "60x40in",
     medium: "Oil On Canvas Sheet",
+    mediaType: "image"
   },
   {
     id: 6,
     title: "Metropolitan Gaze",
-    // description: "Exploration of digital personas",
+    description: "A contemplative study of urban landscapes and human presence",
     type: "fine art",
     image: "/gallery/6.jpg",
     year: "2024",
     size: "60x50in",
     medium: "Oil On Canvas Sheet",
+    mediaType: "image"
   },
   {
     id: 7,
     title: "Sparks of Love",
-    // description: "Conceptual design of brain augmentation",
+    description: "An emotional exploration of connection and energy",
     type: "fine art", 
     image: "/gallery/10.jpg",
     year: "2024",
     size: "50x40in",
     medium: "Oil On Canvas",
+    mediaType: "image"
   },
   {
     id: 8,
     title: "Glass of the Fallen",
-    // description: "Digital recreation of synthetic memories",
+    description: "A symbolic representation of fragility and resilience",
     type: "fine art",
     image: "/gallery/8.jpeg",
     size: "20x26in",
     year: "2022",
     medium: "Oil On Canvas Sheet",
+    mediaType: "image"
   },
 
   {
     id: 9,
     title: "Holding Lights",
-    // description: "3D sculpture of cybernetic organ",
+    description: "A study of light, form, and human connection",
     type: "fine art",
     image: "/gallery/9.jpg",
     year: "2024",
     size: "20x24in",
     medium: "Oil On Canvas Sheet",
+    mediaType: "image"
   },
   {
     id: 10,
     title: "30mins Classwork",
-    // description: "Abstract representation of quantum computing",
+    description: "A spontaneous exploration of form and composition",
     type: "fine art",
     image: "/gallery/7.jpg",
     year: "2022",
     size: "24x26in",
     medium: "Oil On Canvas Sheet",
+    mediaType: "image"
   },
   {
     id: 11,
     title: "Vanitas",
-    // description: "Speculative life form design",
+    description: "A contemporary interpretation of the traditional vanitas theme",
     type: "fine art",
     image: "/gallery/11.jpeg",
     year: "2022",
     size: "26x30in",
     medium: "Oil On Canvas Sheet",
+    mediaType: "image"
   },
   {
     id: 12,
     title: "Dreamt",
-    // description: "Architectural concept for future living spaces",
+    description: "A surreal exploration of dreams and reality",
     type: "fine art",
     image: "/gallery/12.jpg",
     year: "2024",
     medium: "Oil On Canvas Sheet",
+    mediaType: "image"
   },
   //Digitial
   {
     id: 13,
     title: "Dream Realm X",
-    // description: "Architectural concept for future living spaces",
+    description: "A digital exploration of futuristic architecture and design",
     type: "digital",
     image: "/DR/DR-X.png",
     year: "2023",
-    medium: "Ditial(Photoshop)",
-    project: "DR-Concept"
+    medium: "Digital (Photoshop)",
+    project: "DR-Concept",
+    mediaType: "image"
   },
   {
     id: 14,
     title: "Dream Realm Y",
-    // description: "Architectural concept for future living spaces",
+    description: "A conceptual design for a futuristic urban environment",
     type: "digital",
     image: "/DR/DR-Y.png",
     year: "2023",
-    medium: "Ditial(Photoshop)",
-    project: "DR-Concept"
+    medium: "Digital (Photoshop)",
+    project: "DR-Concept",
+    mediaType: "image"
   },
   {
     id: 15,
     title: "Dream Realm Z",
-    // description: "Architectural concept for future living spaces",
+    description: "A digital illustration of a cyberpunk-inspired character",
     type: "digital",
     image: "/DR/DR-Z.png",
     year: "2023",
-    medium: "Ditial(Photoshop)",
-    project: "DR-Concept"
+    medium: "Digital (Photoshop)",
+    project: "DR-Concept",
+    mediaType: "image"
   },
   {
     id: 16,
     title: "Dream Realm D",
-    // description: "Architectural concept for future living spaces",
+    description: "A digital concept art piece for the Dream Realm universe",
     type: "digital",
     image: "/DR/DR-D.png",
     year: "2023",
-    medium: "Ditial(Photoshop)",
-    project: "DR-Concept"
+    medium: "Digital (Photoshop)",
+    project: "DR-Concept",
+    mediaType: "image"
   },
   {
     id: 17,
     title: "Dream Realm Blood Moon Town",
-    // description: "Architectural concept for future living spaces",
+    description: "A digital landscape featuring a town under a blood moon",
     type: "digital",
     image: "/DR/DR-landscape1.png",
     year: "2023",
-    medium: "Ditial(Photoshop)",
-    project: "DR-Concept"
+    medium: "Digital (Photoshop)",
+    project: "DR-Concept",
+    mediaType: "image"
   },
   {
     id: 18,
     title: "Dream Realm Fall of Loong",
-    // description: "Architectural concept for future living spaces",
+    description: "A digital illustration depicting a dramatic scene from the Dream Realm",
     type: "digital",
     image: "/DR/DR-landscape2.jpg",
     year: "2022",
-    medium: "Ditial(Photoshop)",
-    project: "DR-Concept"
+    medium: "Digital (Photoshop)",
+    project: "DR-Concept",
+    mediaType: "image"
   },
   {
     id: 19,
     title: "Dream Realm Matrix City",
-    // description: "Architectural concept for future living spaces",
+    description: "A 3D architectural visualization of a futuristic cityscape",
     type: "digital",
     image: "/DR/DR-landscape3.jpg",
     year: "2022",
     medium: "3D printed architectural model with electronics",
-    project: "DR-Concept"
+    project: "DR-Concept",
+    mediaType: "image"
   },
   {
     id: 20,
+    title: "Dream Realm 3D Models",
+    description: "A collection of 3D models and animations for the Dream Realm universe",
+    type: "3d",
+    image: "/DR/DR-3D.png",
+    year: "2023",
+    medium: "3D Modeling and Animation",
+    mediaType: "image"
+  },
+  {
+    id: 21,
+    title: "Dream Realm 3D Models 2",
+    description: "Additional 3D models showcasing character designs and environments",
+    type: "3d",
+    image: "/DR/DR-3D2.png",
+    year: "2023",
+    medium: "3D Modeling and Animation",
+    mediaType: "image"
+  },
+  {
+    id: 22,
+    title: "Dream Realm 3D Models 3",
+    description: "Final set of 3D models featuring architectural elements and props",
+    type: "3d",
+    image: "/DR/DR-3D3.png",
+    year: "2023",
+    medium: "3D Modeling and Animation",
+    mediaType: "image"
+  },
+  {
+    id: 23,
     title: "DRZ Sword Animation",
-    description: "3D animation of DRZ's sword",
-    category: "Animation",
+    description: "3D animation of DRZ wielding a sword",
+    type: "3d",
     image: "/static/videos/DRZsword.mp4",
+    year: "2024",
+    medium: "Blender & Zbrush",
     mediaType: "video",
     poster: "/DR/DRZsword-poster.jpg"
   },
   {
-    id: 21,
+    id: 24,
     title: "DRZ Character Animation",
-    description: "3D animation of DRZ character",
-    category: "Animation",
+    description: "3D animation showcasing DRZ's character design",
+    type: "3d",
     image: "/static/videos/DRZvideo.mp4",
+    year: "2024",
+    medium: "Blender & Zbrush",
     mediaType: "video",
     poster: "/DR/DRZvideo-poster.jpg"
   },
   {
-    id: 22,
-    title: "DRS Character Animation",
-    description: "3D animation of DRS character",
-    category: "Animation",
+    id: 25,
+    title: "DRS Space Animation",
+    description: "3D animation of DRS in space environment",
+    type: "3d",
     image: "/static/videos/DRSvideo.mp4",
+    year: "2024",
+    medium: "Blender & Zbrush",
     mediaType: "video",
     poster: "/DR/DRSvideo-poster.jpg"
   },

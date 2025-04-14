@@ -76,8 +76,12 @@ export default function ContactPage() {
                   <p className="text-muted-foreground">JX2089370781</p>
                 </div>
                 <div className="space-y-1">
-                  <h3 className="font-medium">Instagram</h3>
-                  <p className="text-muted-foreground">@jezzaxu</p>
+                <h3 className="font-medium">Instagram</h3>
+                  <p className="text-muted-foreground">
+                    <a href="https://www.instagram.com/jeremiahxart/" target="_blank" rel="noopener noreferrer" className="text-neon-blue hover:underline">
+                      jeremiahxart
+                    </a>
+                  </p>
                 </div>
                 <div className="space-y-1">
                   <h3 className="font-medium">LinkedIn</h3>
