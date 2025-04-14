@@ -236,36 +236,6 @@ const artworks: Artwork[] = [
   },
   {
     id: 20,
-    title: "Dream Realm 3D Models",
-    description: "A collection of 3D models and animations for the Dream Realm universe",
-    type: "3d",
-    image: "/DR/DR-3D.png",
-    year: "2023",
-    medium: "3D Modeling and Animation",
-    mediaType: "image"
-  },
-  {
-    id: 21,
-    title: "Dream Realm 3D Models 2",
-    description: "Additional 3D models showcasing character designs and environments",
-    type: "3d",
-    image: "/DR/DR-3D2.png",
-    year: "2023",
-    medium: "3D Modeling and Animation",
-    mediaType: "image"
-  },
-  {
-    id: 22,
-    title: "Dream Realm 3D Models 3",
-    description: "Final set of 3D models featuring architectural elements and props",
-    type: "3d",
-    image: "/DR/DR-3D3.png",
-    year: "2023",
-    medium: "3D Modeling and Animation",
-    mediaType: "image"
-  },
-  {
-    id: 23,
     title: "DRZ Sword Animation",
     description: "3D animation of DRZ wielding a sword",
     type: "3d",
@@ -276,7 +246,7 @@ const artworks: Artwork[] = [
     poster: "/DR/DRZsword-poster.jpg"
   },
   {
-    id: 24,
+    id: 21,
     title: "DRZ Character Animation",
     description: "3D animation showcasing DRZ's character design",
     type: "3d",
@@ -287,7 +257,7 @@ const artworks: Artwork[] = [
     poster: "/DR/DRZvideo-poster.jpg"
   },
   {
-    id: 25,
+    id: 22,
     title: "DRS Space Animation",
     description: "3D animation of DRS in space environment",
     type: "3d",
