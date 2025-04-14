@@ -6,9 +6,22 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArtworkCard } from "@/components/artwork-card"
 import { motion } from "framer-motion"
 
+interface Artwork {
+  id: number
+  title: string
+  description: string
+  type: string
+  image: string
+  year: string
+  medium: string
+  size?: string
+  mediaType?: "video" | "image"
+  project?: string
+  poster?: string
+}
 
 // Your artwork data here...
-const artworks = [
+const artworks: Artwork[] = [
   // Fine Arts
   {
     id: 1,
@@ -204,36 +217,30 @@ const artworks = [
   },
   {
     id: 20,
-    title: "DR-sword-3D",
-    // description: "Architectural concept for future living spaces",
-    type: "3d",
-    image: "/DR/DRZsword.mp4",
+    title: "DRZ Sword Animation",
+    description: "3D animation of DRZ's sword",
+    category: "Animation",
+    image: "/static/videos/DRZsword.mp4",
     mediaType: "video",
-    year: "2023",
-    medium: "Zbrush",
-    project: "DR-Concept"
+    poster: "/DR/DRZsword-poster.jpg"
   },
   {
     id: 21,
-    title: "DR-Z-3D",
-    // description: "Architectural concept for future living spaces",
-    type: "3d",
-    image: "/DR/DRZvideo.mp4",
+    title: "DRZ Character Animation",
+    description: "3D animation of DRZ character",
+    category: "Animation",
+    image: "/static/videos/DRZvideo.mp4",
     mediaType: "video",
-    year: "2023",
-    medium: "Zbrush",
-    project: "DR-Concept"
+    poster: "/DR/DRZvideo-poster.jpg"
   },
   {
     id: 22,
-    title: "DR-sword-animated",
-    // description: "Architectural concept for future living spaces",
-    type: "3d",
-    image: "/DR/DRSvideo.mp4",
+    title: "DRS Character Animation",
+    description: "3D animation of DRS character",
+    category: "Animation",
+    image: "/static/videos/DRSvideo.mp4",
     mediaType: "video",
-    year: "2023",
-    medium: "Blender&Zbrush",
-    project: "DR-Concept"
+    poster: "/DR/DRSvideo-poster.jpg"
   },
   // {
   //   id: 23,
