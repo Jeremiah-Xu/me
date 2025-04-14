@@ -12,7 +12,7 @@ export default function ContactPage() {
             <div className="space-y-2">
               <h1 className="text-3xl font-cyber tracking-tighter sm:text-5xl">Contact</h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Get in touch for commissions, exhibitions， game development, or just to say hello
+                Get in touch for commissions, game development, or just to say hello
               </p>
             </div>
           </div>

@@ -22,13 +22,13 @@ const projects = [
     image: "/DR/DRZb.png",
     category: "CONCEPT ART",
   },
-  {
-    id: "DR-3D",
-    title: "Dream Realm 3D Models",
-    description: "3D models and animations for Dream Realm",
-    image: "/DR/DRZvideo.mp4",
-    category: "3D",
-  },
+  // {
+  //   id: "DR-3D",
+  //   title: "Dream Realm 3D Models",
+  //   description: "3D models and animations for Dream Realm",
+  //   image: "/DR/DRZvideo.mp4",
+  //   category: "3D",
+  // },
 ]
 
 export default function Home() {
@@ -43,8 +43,8 @@ export default function Home() {
 
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                <span className="text-neon-blue">FEATURED</span> PROJECTS
+              <h2 className="text-3xl font-cyber tracking-tighter sm:text-5xl">
+                <span className="text-neon-blue">FEATURED</span> <span className="glitch-text" data-text="PROJECTS">PROJECTS</span>
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Pushing the boundaries of what's possible
@@ -65,7 +65,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Link href="/projects">
-              <Button variant="outline" className="gap-1 border-[#FFD700] text-[#FFD700] hover:bg-[#FFD700] hover:text-black transition-colors duration-300">
+              <Button variant="outline" className="gap-1 border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-black transition-colors duration-300">
                 View All Projects
                 <ArrowRight className="h-4 w-4" />
               </Button>
