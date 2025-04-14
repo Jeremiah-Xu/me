@@ -20,7 +20,7 @@ export function Hero() {
                 </span>{" "} 
                 <span className="text-neon-blue">INNOVATIVE</span> <span className="text-neon-purple">ART</span>
               </h1>
-              <p className="font-mono max-w-[600px] text-muted-foreground md:text-xl">
+              <p className="font-unbound max-w-[600px] text-muted-foreground md:text-xl">
                 Explore my innovative projects and artworks at the intersection of technology and creativity.
               </p>
             </div>

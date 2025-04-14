@@ -22,7 +22,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-neon-blue/30 bg-background/95 backdrop-blur">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="font-cyber text-xl text-neon-blue">
-          Jeremiah<span className="text-neon-purple">Xu</span>
+          <span className="shoot-text-left">Jeremiah</span><span className="shoot-text-right text-neon-purple">Xu</span>
         </Link>
         <nav className="hidden md:flex gap-6">
           {routes.map((route) => (

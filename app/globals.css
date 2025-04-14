@@ -112,13 +112,13 @@
 }
 
 .glitch-text::before {
-  left: 2px;
+  left:1px;
   text-shadow: -3px 0 #ff00ff;
   animation: glitch-anim 2s infinite linear alternate-reverse;
 }
 
 .glitch-text::after {
-  left: -2px;
+  left: -1px;
   text-shadow: 3px 0 #00ffff;
   animation: glitch-anim2 2s infinite linear alternate-reverse;
 }
@@ -801,4 +801,56 @@
   100% {
     transform: translateX(0);
   }
+}
+
+@keyframes shoot-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes shoot-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.shoot-text-left {
+  animation: shoot-in-left 5s;
+  display: inline-block;
+}
+
+.shoot-text-right {
+  animation: shoot-in-right 5s;
+  display: inline-block;
+}
+
+.font-unbound {
+  font-family: var(--font-unbound);
 }

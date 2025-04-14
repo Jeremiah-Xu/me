@@ -21,8 +21,8 @@ body {
 }
 
 @font-face {
-  font-family: 'YourFont';
-  src: url('/fonts/UNboundPro-Bold') format('otf');
+  font-family: 'unbound';
+  src: url('/fonts/UnboundPro-Bold.otf') format('otf');
   font-weight: 700;
   font-style: normal;
   font-display: swap;

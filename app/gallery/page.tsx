@@ -278,8 +278,8 @@ export default function GalleryPage() {
 
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="text-neon-blue text-sm tracking-widest uppercase">Collection</div>
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <div className="font-unbound text-neon-blue tracking-widest uppercase">Collection</div>
+              <h1 className="text-3xl font-normal tracking-tighter sm:text-5xl">
                 <span className="font-cyber glitch-text" data-text="Gallery">Gallery</span>
               </h1>
               <p className="max-w-[900px] text-muted-foreground text-sm">

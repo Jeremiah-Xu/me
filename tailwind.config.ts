@@ -21,7 +21,7 @@ const config = {
     extend: {
       fontFamily: {
         'cyber': ['var(--font-cyberpunk)'],
-        'normal': ['var(--font-Orbitron)']
+        'unbound': ['var(--font-unbound)']
       },
       colors: {
         border: "hsl(var(--border))",

@@ -2,6 +2,7 @@ import type React from "react"
 import "@/app/globals.css"
 import type { Metadata } from "next"
 import { yourFont } from './fonts'
+import { unboundFont } from './fonts'
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 

@@ -1,8 +1,52 @@
+"use client"
+
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { toast } from "sonner"
 import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
-import { ContactForm } from "@/components/contact-form"
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to send message")
+      }
+
+      toast.success("Message sent successfully!")
+      setFormData({ name: "", email: "", message: "" })
+    } catch (error) {
+      toast.error("Failed to send message. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
+
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -35,27 +79,65 @@ export default function ContactPage() {
                   <h3 className="font-medium">Instagram</h3>
                   <p className="text-muted-foreground">@jezzaxu</p>
                 </div>
-                {/* <div className="space-y-1">
-                  <h3 className="font-medium">Studio Address</h3>
+                <div className="space-y-1">
+                  <h3 className="font-medium">LinkedIn</h3>
                   <p className="text-muted-foreground">
-                    123 Art Studio Lane
-                    <br />
-                    New York, NY 10001
+                    <a href="https://www.linkedin.com/in/jeremiah-xu-73b982262/" target="_blank" rel="noopener noreferrer" className="text-neon-blue hover:underline">
+                      Jeremiah Xu
+                    </a>
                   </p>
-                </div> */}
-                {/* <div className="space-y-1">
-                  <h3 className="font-medium">Wechat</h3>
-                  <p className="text-muted-foreground">
-                    Gallery 23
-                    <br />
-                    456 Gallery Row
-                    <br />
-                    New York, NY 10002
-                  </p>
-                </div> */}
+                </div>
               </div>
             </div>
-            <ContactForm />
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="space-y-2">
+                <label htmlFor="name" className="text-sm font-medium">
+                  Name
+                </label>
+                <Input
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="bg-background"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="email" className="text-sm font-medium">
+                  Email
+                </label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="bg-background"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="message" className="text-sm font-medium">
+                  Message
+                </label>
+                <Textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  className="min-h-[150px] bg-background"
+                />
+              </div>
+              <Button 
+                type="submit" 
+                disabled={isSubmitting} 
+                className="w-full bg-white text-black hover:bg-gray-200 border border-black"
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </Button>
+            </form>
           </div>
         </section>
       </main>

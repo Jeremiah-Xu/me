@@ -7,7 +7,17 @@ import { Card } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-const artworks = [
+interface Artwork {
+  id: number
+  title: string
+  description: string
+  category: string
+  image: string
+  mediaType?: "video" | "image"
+  poster?: string
+}
+
+const artworks: Artwork[] = [
   {
     id: 1,
     title: "Abstract Composition",
@@ -124,13 +134,7 @@ export function Gallery() {
 }
 
 interface ArtworkCardProps {
-  artwork: {
-    id: number
-    title: string
-    description: string
-    category: string
-    image: string
-  }
+  artwork: Artwork
 }
 
 function ArtworkCard({ artwork }: ArtworkCardProps) {
@@ -139,12 +143,32 @@ function ArtworkCard({ artwork }: ArtworkCardProps) {
       <DialogTrigger asChild>
         <Card className="overflow-hidden cursor-pointer transition-all hover:shadow-lg border border-muted">
           <div className="relative aspect-[3/4] w-full">
-            <Image
-              src={artwork.image || "/placeholder.svg"}
-              alt={artwork.title}
-              fill
-              className="object-cover transition-transform hover:scale-105"
-            />
+            {artwork.mediaType === "video" && (
+              <video
+                src={artwork.image}
+                className="w-full h-full object-cover"
+                controls
+                preload="metadata"
+                playsInline
+                loop
+                muted
+                poster={artwork.poster}
+              >
+                <source src={artwork.image} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
+            {!artwork.mediaType && (
+              <Image
+                src={artwork.image || "/placeholder.svg"}
+                alt={artwork.title}
+                width={800}
+                height={600}
+                className="object-cover w-full h-full"
+                loading="lazy"
+                unoptimized
+              />
+            )}
           </div>
           <div className="p-4">
             <h3 className="font-semibold">{artwork.title}</h3>
@@ -156,7 +180,14 @@ function ArtworkCard({ artwork }: ArtworkCardProps) {
       <DialogContent className="max-w-2xl">
         <div className="grid gap-4 py-4 md:grid-cols-[1fr_300px]">
           <div className="relative aspect-[4/3] w-full md:aspect-auto md:h-full">
-            <Image src={artwork.image || "/placeholder.svg"} alt={artwork.title} fill className="object-contain" />
+            <Image
+              src={artwork.image || "/placeholder.svg"}
+              alt={artwork.title}
+              fill
+              className="object-contain"
+              loading="lazy"
+              unoptimized
+            />
           </div>
           <div className="space-y-2">
             <h2 className="text-xl font-bold">{artwork.title}</h2>
