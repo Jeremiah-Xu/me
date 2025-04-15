@@ -7,9 +7,12 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: "Cyberpunk Portfolio",
+  title: "Jeremiah XU's PersonalWebsite",
   description: "Futuristic project showcase in cyberpunk style",
-}
+  icons: {
+    icon: "/logo3.png", // or "/favicon.png"
+  },
+};
 
 export default function RootLayout({
   children,

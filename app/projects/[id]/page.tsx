@@ -140,24 +140,24 @@ const projectsData = {
         display: "half",
         alt: "Detailed concept art 7"
       },
-      {
-        src: "/DR/DR-landscape1.png",
-        type: "image",
-        display: "half",
-        alt: "Detailed concept art"
-      },
-      {
-        src: "/DR/DR-landscape2.jpg",
-        type: "image",
-        display: "half",
-        alt: "Detailed concept art"
-      },
-      {
-        src: "/DR/DR-landscape3.jpg",
-        type: "image",
-        display: "full",
-        alt: "Detailed concept art"
-      },
+      // {
+      //   src: "/DR/DR-landscape1.png",
+      //   type: "image",
+      //   display: "half",
+      //   alt: "Detailed concept art"
+      // },
+      // {
+      //   src: "/DR/DR-landscape2.jpg",
+      //   type: "image",
+      //   display: "half",
+      //   alt: "Detailed concept art"
+      // },
+      // {
+      //   src: "/DR/DR-landscape3.jpg",
+      //   type: "image",
+      //   display: "full",
+      //   alt: "Detailed concept art"
+      // },
     ],
     category: "Concept Art",
     technologies: ["Photoshop", "Zbrush", "Blender", "Concept Art"],

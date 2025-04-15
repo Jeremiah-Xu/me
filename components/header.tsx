@@ -1,7 +1,9 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
+import { useState, useEffect } from "react"
 import { Menu } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -9,6 +11,12 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export function Header() {
   const pathname = usePathname()
+  const [showLogo, setShowLogo] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowLogo(true), 1000)
+    return () => clearTimeout(timer)
+  }, [])
 
   const routes = [
     { href: "/", label: "HOME" },
@@ -20,9 +28,20 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-neon-blue/30 bg-background/95 backdrop-blur">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="font-cyber text-xl text-neon-blue">
-          <span className="shoot-text-left">Jeremiah</span><span className="shoot-text-right text-neon-purple">Xu</span>
+          <span className="flex items-center">
+            <span className="shoot-text-left">Jeremiah</span>
+            <Image
+              src="/logo4.png"
+              alt="Logo"
+              width={54}
+              height={54}
+              className={`mr-1 mb-1 transition-opacity duration-300 ${showLogo ? "opacity-100" : "opacity-0"}`}
+              priority
+            />
+            <span className="shoot-text-right text-neon-purple">Xu</span>
+          </span>
         </Link>
         <nav className="hidden md:flex gap-6">
           {routes.map((route) => (
