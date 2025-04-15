@@ -30,6 +30,7 @@ export function ArtworkCard({ artwork }: ArtworkCardProps) {
         <video
           src={artwork.image}
           className={`w-full h-full object-contain ${isDialog ? "" : "rounded-t-xl"}`}
+          type="video/mp4"
           controls={isDialog}
           playsInline
           muted={!isDialog}

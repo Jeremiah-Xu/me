@@ -842,12 +842,12 @@
 }
 
 .shoot-text-left {
-  animation: shoot-in-left 5s;
+  animation: shoot-in-left 10s infinite;
   display: inline-block;
 }
 
 .shoot-text-right {
-  animation: shoot-in-right 5s;
+  animation: shoot-in-right 10s infinite;
   display: inline-block;
 }
 
