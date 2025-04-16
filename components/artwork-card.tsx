@@ -18,11 +18,13 @@ interface ArtworkCardProps {
     medium: string
     mediaType?: "image" | "video"
     project?: string // Add project field
+    size: string
   }
 }
 
 export function ArtworkCard({ artwork }: ArtworkCardProps) {
   const [isHovered, setIsHovered] = useState(false)
+  const [activeArtwork, setActiveArtwork] = useState<string | null>(null)
 
   const renderMedia = (isDialog = false) => {
     if (artwork.mediaType === "video") {
@@ -50,11 +52,15 @@ export function ArtworkCard({ artwork }: ArtworkCardProps) {
     }
   }
 
+  const handleCardClick = (name: string) => {
+    setActiveArtwork(activeArtwork === name ? null : name)
+  }
+
   return (
     <Dialog>
       <DialogTrigger asChild>
         <div
-          className="group relative overflow-hidden rounded-xl cyberpunk-card transition-all duration-300 hover:scale-[1.05] cursor-pointer w-full max-w-[300px] min-h-[500px]"
+          className="group relative overflow-hidden rounded-xl cyberpunk-card transition-all duration-300 hover:scale-[1.05] cursor-pointer w-full max-w-[300px] min-h-[300px]"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -70,23 +76,12 @@ export function ArtworkCard({ artwork }: ArtworkCardProps) {
               </div>
             </div>
           </div>
-          <div className="p-6 space-y-2">
-            <Badge
-              className={`text-sm px-3 py-1.5 mb-2 ${
-                artwork.type === "painting"
-                  ? "bg-neon-blue/20 text-neon-blue hover:bg-neon-blue/30"
-                  : artwork.type === "digital"
-                  ? "bg-neon-purple/20 text-neon-purple hover:bg-neon-purple/30"
-                  : "bg-neon-pink/20 text-neon-pink hover:bg-neon-pink/30"
-              }`}
-            >
-              {artwork.type.toUpperCase()}
-            </Badge>
-            <h3 className="font-bold text-xl md:text-2xl group-hover:text-neon-blue transition-colors">
+          {/* <div className="p-6 space-y-2">
+            <h3 className="font text-l md:text-l group-hover:text-neon-blue transition-colors">
               {artwork.title}
             </h3>
             <p className="text-base text-muted-foreground">{artwork.description}</p>
-          </div>
+          </div> */}
         </div>
       </DialogTrigger>
       <DialogContent className="max-w-full h-full bg-black/90 border border-neon-blue/50">
@@ -117,6 +112,10 @@ export function ArtworkCard({ artwork }: ArtworkCardProps) {
                 <span className="text-sm text-muted-foreground">Medium</span>
                 <span className="text-sm">{artwork.medium}</span>
               </div>
+              <div className="flex justify-between">
+                <span className="text-sm text-muted-foreground">Size</span>
+                <span className="text-sm">{artwork.size}</span>
+              </div>
             </div>
             
             <div className="p-20">
@@ -130,6 +129,17 @@ export function ArtworkCard({ artwork }: ArtworkCardProps) {
             )}
             </div>
           </div>
+        </div>
+        <div className="mt-4 text-center">
+          <button onClick={() => handleCardClick(artwork.title)} className="text-sm text-neon-blue">
+            {activeArtwork === artwork.title ? "Hide Details" : "Show Details"}
+          </button>
+          {activeArtwork === artwork.title && (
+            <div className="mt-2 text-sm text-muted-foreground">
+              <p>{artwork.description}</p>
+              <p>Size: {artwork.size}</p>
+            </div>
+          )}
         </div>
       </DialogContent>
     </Dialog>

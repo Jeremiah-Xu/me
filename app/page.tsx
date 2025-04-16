@@ -72,27 +72,6 @@ export default function Home() {
             </Link>
           </div>
         </section>
-        <section className="py-12 md:py-24 lg:py-32 relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-neon-blue/5 to-neon-purple/5"></div>
-          <div className="container flex flex-col items-center justify-center space-y-4 text-center relative z-10">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                <span className="text-neon-purple">CONNECT</span>
-              </h2>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Interested in collaboration or have questions about my projects?
-              </p>
-            </div>
-            <div className="mx-auto w-full max-w-sm space-y-2">
-              <Link href="/contact">
-                <Button className="w-full gap-1 bg-neon-purple hover:bg-neon-purple/80 text-white">
-                  <Mail className="h-4 w-4" />
-                  Contact Me
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>

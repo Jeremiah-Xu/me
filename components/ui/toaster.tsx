@@ -9,6 +9,7 @@ import {
   ToastTitle,
   ToastViewport,
 } from "@/components/ui/toast"
+import { Toaster } from 'react-hot-toast'
 
 export function Toaster() {
   const { toasts } = useToast()
@@ -32,4 +33,8 @@ export function Toaster() {
       <ToastViewport />
     </ToastProvider>
   )
+}
+
+export default function CustomToaster() {
+  return <Toaster position="top-right" reverseOrder={false} />;
 }

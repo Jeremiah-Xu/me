@@ -14,34 +14,43 @@ import { useToast } from "@/hooks/use-toast"
 export function ContactForm() {
   const { toast } = useToast()
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' })
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      toast({
-        title: "Message sent",
-        description: "Thank you for your message. I'll get back to you soon.",
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
 
-      // Reset form
-      const form = e.target as HTMLFormElement
-      form.reset()
-    }, 1000)
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
+
+      toast.success('Message sent successfully!')
+      setFormData({ name: '', email: '', message: '' })
+    } catch (error) {
+      toast.error('Failed to send message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="space-y-2">
         <Label htmlFor="name">Name</Label>
-        <Input id="name" placeholder="Your name" required />
+        <Input id="name" placeholder="Your name" required value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
       </div>
       <div className="space-y-2">
         <Label htmlFor="email">Email</Label>
-        <Input id="email" type="email" placeholder="Your email address" required />
+        <Input id="email" type="email" placeholder="Your email address" required value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
       </div>
       <div className="space-y-2">
         <Label htmlFor="subject">Subject</Label>
@@ -49,7 +58,7 @@ export function ContactForm() {
       </div>
       <div className="space-y-2">
         <Label htmlFor="message">Message</Label>
-        <Textarea id="message" placeholder="Your message" className="min-h-[150px]" required />
+        <Textarea id="message" placeholder="Your message" className="min-h-[150px]" required value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} />
       </div>
       <Button type="submit" className="w-full gap-1" disabled={isSubmitting}>
         {isSubmitting ? (
