@@ -112,15 +112,15 @@
 }
 
 .glitch-text::before {
-  left:1px;
-  text-shadow: -3px 0 #ff00ff;
-  animation: glitch-anim 2s infinite linear alternate-reverse;
+  left:2px;
+  text-shadow: -4px 0 #c7001e;
+  animation: glitch-anim 3s infinite linear alternate-reverse;
 }
 
 .glitch-text::after {
-  left: -1px;
-  text-shadow: 3px 0 #00ffff;
-  animation: glitch-anim2 2s infinite linear alternate-reverse;
+  left: -2px;
+  text-shadow: 4px 0 #988353;
+  animation: glitch-anim2 3s infinite linear alternate-reverse;
 }
 
 @keyframes glitch-anim {
