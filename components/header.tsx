@@ -33,7 +33,7 @@ export function Header() {
           <span className="flex items-center">
             <span className="shoot-text-left">Jeremiah</span>
             <Image
-              src="/logo8.png"
+              src="/logo9.png"
               alt="Logo"
               width={54}
               height={54}

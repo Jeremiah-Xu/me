@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Jeremiah XU's PersonalWebsite",
   description: "Futuristic project showcase in cyberpunk style",
   icons: {
-    icon: "/logo7.png", // or "/favicon.png"
+    icon: "/logo10.png", // or "/favicon.png"
   },
 };
 
