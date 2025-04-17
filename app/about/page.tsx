@@ -298,6 +298,24 @@ export default function AboutPage() {
           </div>
         </section>
 
+        <section id="education" className="py-10">
+        
+          <div className="container">
+            <h2 className="text-3xl font-cyber tracking-tighter sm:text-4xl mb-10">
+              EDUCATION
+            </h2>
+            <div className="">
+            <p className="text-muted-foreground text-center p-2 border border-neon-blue/30">
+              Eton College  2020-2022
+            </p>
+            <p className="text-muted-foreground text-center p-2 border border-neon-blue/30">
+            Bachelor of Arts in Visual Arts & Bachelor of Arts in Computer Science
+            Columbia University, Class of 2026
+            </p>
+            </div>
+          </div>
+        </section>
+
         {/* Skills Section */}
         <section id="skills" className="py-16">
           <div className="container">
@@ -328,7 +346,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-cyber tracking-tighter sm:text-4xl mb-10">
                 SOCTIALS
               </h2>
-              <div className="grid text-center gap-4 md:grid-cols-2 lg:grid-cols-5">
+              <div className="grid text-center gap-4 md:grid-cols-2 lg:grid-cols-6">
                 <a
                   href="https://www.instagram.com/jeremiahxart/"
                   target="_blank"
@@ -353,11 +371,15 @@ export default function AboutPage() {
                 </div>
                 <div className="p-4 border border-neon-blue/30 rounded-lg">
                   <h3 className="font-bold text-neon-blue">Email</h3>
-                  <p className="text-sm text-muted-foreground">jx2515@columbia.edu</p>
+                  <p className="text-sm text-muted-foreground">jezxax@gmail.com</p>
                 </div>
                 <div className="p-4 border border-neon-blue/30 rounded-lg">
                   <h3 className="font-bold text-neon-blue">Youtube</h3>
                   <p className="text-sm text-muted-foreground">Jeremiah Xu</p>
+                </div>
+                <div className="p-4 border border-neon-blue/30 rounded-lg">
+                  <h3 className="font-bold text-neon-blue">bilibili</h3>
+                  <p className="text-sm text-muted-foreground"></p>
                 </div>
               </div>
           </div>
