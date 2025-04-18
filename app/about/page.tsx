@@ -12,6 +12,7 @@ import { SectionNav } from "@/components/section-nav"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronDown } from "lucide-react"
 import SkillsFlowingMenu from '@/components/SkillsFlowingMenu'
+import TextPressure from '@/components/textpressure';
 
 const sections = [
   { id: "intro", label: "Introduction" },
@@ -134,7 +135,7 @@ const skillsData: SkillCategory[] = [
     ]
   },
   {
-    title: "Film, Theater, & Music",
+    title: "FIlm Theater Music",
     color: "neon-pink",
     skills: [
       {
@@ -267,7 +268,20 @@ export default function AboutPage() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 max-w-6xl mx-auto">
               <div className="flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-cyber tracking-tighter sm:text-5xl">About Me</h1>
+                  <div style={{position: 'relative', height: '200px'}}>
+                    <TextPressure
+                      text="About Me"
+                      flex={true}
+                      alpha={false}
+                      stroke={false}
+                      width={true}
+                      weight={true}
+                      italic={true}
+                      textColor="#ffffff"
+                      strokeColor="#ff0000"
+                      minFontSize={36}
+                    />
+                  </div>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     Artist, Creator, and Game Developer
                   </p>

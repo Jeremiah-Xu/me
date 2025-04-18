@@ -37,7 +37,7 @@ export function Header() {
                 <span className="shoot-text-left">Jeremiah</span>
                 {showLogo && (
                   <Image
-                    src="/logo21.png"
+                    src="/logo23.png"
                     alt="Logo"
                     width={48}
                     height={48}

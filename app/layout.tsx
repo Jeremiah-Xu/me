@@ -3,6 +3,7 @@ import "@/app/globals.css"
 import type { Metadata } from "next"
 import { yourFont } from './fonts'
 import { unboundFont } from './fonts'
+import { designerFont } from './fonts'
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: "Jeremiah XU's PersonalWebsite",
   description: "Futuristic project showcase in cyberpunk style",
   icons: {
-    icon: "/logo20.png", // or "/favicon.png"
+    icon: "/logo22.png", // or "/favicon.png"
   },
 };
 

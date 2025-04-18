@@ -87,7 +87,7 @@ function MenuItem({ title, color, image, skills, onClick, isActive }: MenuItem &
 
   const repeatedMarqueeContent = Array.from({ length: 4 }).map((_, idx) => (
     <React.Fragment key={idx}>
-      <span className={`text-${color}`}>{title}</span>
+      <span className="font-cyber">{title}</span>
       <div
         className="marquee__img"
         style={{ backgroundImage: `url(${image})` }}
@@ -103,7 +103,7 @@ function MenuItem({ title, color, image, skills, onClick, isActive }: MenuItem &
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <span className={`text-2xl font-bold text-${color}`}>
+        <span className={`text-2xl font-cyber text-${color}`}>
           {title}
         </span>
       </button>

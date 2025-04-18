@@ -11,13 +11,13 @@ export function Hero() {
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h1 className="font-cyber text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+              <div className="font-cyber text-3xl sm:text-5xl xl:text-6xl/none">
                 <span className="glitch-text" data-text="REDEFINED">
                 REDEFINED
-                </span>{" "} 
+                </span>{" "}
                 <span className="text-neon-blue">INNOVATIVE</span> <span className="text-neon-purple">ART</span>
-              </h1>
-              <p className="font-unbound max-w-[600px] text-muted-foreground md:text-xl">
+              </div>
+              <p className="max-w-[600px] text-muted-foreground md:text-xl">
                 Explore my innovative projects and artworks at the intersection of technology and creativity.
               </p>
             </div>

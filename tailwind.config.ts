@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import { fontFamily } from ""
 
 const config = {
   darkMode: ["class"],
@@ -21,7 +22,8 @@ const config = {
     extend: {
       fontFamily: {
         'cyber': ['var(--font-cyberpunk)'],
-        'unbound': ['var(--font-unbound)']
+        'unbound': ['var(--font-unbound)'],
+        'designer': ['var(--font-designer)'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -80,7 +82,7 @@ const config = {
         },
         glow: {
           "0%, 100%": {
-            textShadow: "0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 30px #00f0ff",
+            textShadow: "0 0 10pxrgb(218, 197, 106), 0 0 20px #00f0ff, 0 0 30px #00f0ff",
           },
           "50%": {
             textShadow: "0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 15px #00f0ff",
