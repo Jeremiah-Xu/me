@@ -14,7 +14,7 @@ const projects = [
   {
     id: "DR-Concept",
     title: "Dream Realm Concept Art",
-    description: "Unhackable communication protocol using quantum entanglement",
+    description: "My render of a world shared by all through dreams, yet forgotten upon waking",
     image: "/DR/DRZb.png",
     category: "CONCEPT ART",
   },
