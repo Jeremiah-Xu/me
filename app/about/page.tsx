@@ -268,7 +268,7 @@ export default function AboutPage() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 max-w-6xl mx-auto">
               <div className="flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <div style={{position: 'relative', height: '200px'}}>
+                  <div style={{ position: 'relative', height: '200px' }}>
                     <TextPressure
                       text="About Me"
                       flex={true}
@@ -298,8 +298,8 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="cyberpunk-border relative h-[500px] w-[400px] overflow-hidden rounded-lg">
+              <div className="flex flex-col items-center justify-center">
+                <div className="cyberpunk-border relative h-[500px] w-[400px] overflow-hidden rounded-lg mb-6">
                   <Image
                     src="/shared/self.jpg"
                     alt="Artist portrait"
@@ -307,28 +307,23 @@ export default function AboutPage() {
                     className="object-cover"
                   />
                 </div>
+                {/* <h2 className="text-3xl font-unbounded tracking-tighter sm:text-4xl mb-4">
+                  EDUCATION
+                </h2> */}
+                <div className="text-center border border-neon-blue/30">
+                  <p className="text-muted-foreground p-2">
+                    Eton College 2020-2022
+                  </p>
+                  <p className="text-muted-foreground p-2">
+                    Bachelor of Arts in Visual Arts & Bachelor of Arts in Computer Science
+                    Columbia University, Class of 2026
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="education" className="py-10">
-        
-          <div className="container">
-            <h2 className="text-3xl font-cyber tracking-tighter sm:text-4xl mb-10">
-              EDUCATION
-            </h2>
-            <div className="">
-            <p className="text-muted-foreground text-center p-2 border border-neon-blue/30">
-              Eton College  2020-2022
-            </p>
-            <p className="text-muted-foreground text-center p-2 border border-neon-blue/30">
-            Bachelor of Arts in Visual Arts & Bachelor of Arts in Computer Science
-            Columbia University, Class of 2026
-            </p>
-            </div>
-          </div>
-        </section>
 
         {/* Skills Section */}
         <section id="skills" className="py-16">
