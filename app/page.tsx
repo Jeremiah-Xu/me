@@ -6,7 +6,7 @@ import { ProjectCard } from "@/components/project-card"
 import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
-
+import SplashCursor from "@/components/splashcursor"
 const projects = [
   {
     id: "DR-Space",
@@ -33,14 +33,13 @@ const projects = [
 
 export default function Home() {
   return (
+    
     <div className="flex min-h-screen flex-col">
       <Header />
+      
       <main className="flex-1">
         <Hero />
         <section className="container py-12 md:py-24 lg:py-32 relative">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-neon-purple/10 rounded-full blur-3xl -z-10"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-neon-blue/10 rounded-full blur-3xl -z-10"></div>
-
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-cyber tracking-tighter sm:text-5xl">

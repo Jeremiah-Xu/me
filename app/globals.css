@@ -108,19 +108,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0);
   z-index: -1;
 }
 
 .glitch-text::before {
   left:2px;
-  text-shadow: -10px 0 #c7001e;
+  text-shadow: -3px 0 #c7001e;
   animation: glitch-anim 3s infinite linear alternate-reverse;
 }
 
 .glitch-text::after {
   left: -3px;
-  text-shadow: 2px 0 #b39b55;
+  text-shadow: 4px 2px #a17d0f;
   animation: glitch-anim2 2.5s infinite linear alternate-reverse;
 }
 
@@ -1026,3 +1025,15 @@
     transform: translateX(-50%);
   }
 }
+
+#splash-cursor {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.side-div {
+  position: relative; /* Ensure the div has a positioning context */
+  z-index: 10; /* Set the desired z-index value */
+}
+
