@@ -1387,7 +1387,7 @@ export default function SplashCursor({
       // Define color ranges for white, gold, and brown
       const colors = [
         { r: 1.0, g: 1.0, b: 1.0 }, // White
-        { r: 0.83, g: 0.69, b: 0.22 }, // Gold
+        { r: 0.83, g: 0.60, b: 0.22 }, // Gold
         { r: 0.65, g: 0.50, b: 0.39 }, // Brown
       ];
 

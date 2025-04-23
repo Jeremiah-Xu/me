@@ -245,8 +245,8 @@ const artworks: Artwork[] = [
     // description: "A 3D architectural visualization of a futuristic cityscape",
     type: "digital",
     image: "/DR/DR-landscape3.jpg",
-    year: "2022",
-    medium: "3D printed architectural model with electronics",
+    year: "2023",
+    medium: "Digital (Photoshop)",
     project: "DR-Concept",
     mediaType: "image"
   },
