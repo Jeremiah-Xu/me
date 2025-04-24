@@ -29,16 +29,16 @@ export function ArtworkCard({ artwork }: ArtworkCardProps) {
   const renderMedia = (isDialog = false) => {
     if (artwork.mediaType === "video") {
       return (
-        <video
-          src={artwork.image}
-          className={`w-full h-full object-contain ${isDialog ? "" : "rounded-t-xl"}`}
-          type="video/mp4"
-          controls={isDialog}
-          playsInline
-          muted={!isDialog}
-          loop={!isDialog}
-          autoPlay={!isDialog}
-        />
+        <div className="flex items-center justify-center w-full h-full">
+          <iframe
+            src={`https://www.youtube.com/embed/${artwork.image.split('v=')[1]}`}
+            className="w-full h-full"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title={artwork.title}
+          />
+        </div>
       )
     } else {
       return (
@@ -64,7 +64,7 @@ export function ArtworkCard({ artwork }: ArtworkCardProps) {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className="relative w-full h-[400px] md:h-[400px]">
+          <div className="relative w-full h-[400px] md:h-[400px] flex items-center justify-center">
             {renderMedia()}
             <div
               className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${

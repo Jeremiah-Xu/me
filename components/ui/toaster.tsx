@@ -34,7 +34,3 @@ export function Toaster() {
     </ToastProvider>
   )
 }
-
-export default function CustomToaster() {
-  return <Toaster position="top-right" reverseOrder={false} />;
-}

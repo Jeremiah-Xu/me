@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArtworkCard } from "@/components/artwork-card"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 interface Artwork {
   id: number
@@ -299,7 +300,7 @@ const artworks: Artwork[] = [
     title: "DR-Z Sword Model",
     // description: "3D animation of DRZ wielding a sword",
     type: "3d",
-    image: "/videos/DRZsword.mp4",
+    image: "https://www.youtube.com/watch?v=LIVJl6HuqEc",
     year: "2024",
     medium: "Blender & Zbrush",
     mediaType: "video",
@@ -311,7 +312,7 @@ const artworks: Artwork[] = [
     title: "DR-Z Character Model",
     // description: "3D animation showcasing DRZ's character design",
     type: "3d",
-    image: "/videos/DRZvideo.mp4",
+    image: "https://www.youtube.com/watch?v=kNkLzU4tFx8",
     year: "2024",
     medium: "Blender & Zbrush",
     mediaType: "video",
@@ -323,7 +324,7 @@ const artworks: Artwork[] = [
     title: "DR-Z Sword Animation",
     // description: "3D animation of DRS in space environment",
     type: "3d",
-    image: "/videos/DRSvideo.mp4",
+    image: "https://www.youtube.com/watch?v=7khujINffxE",
     year: "2024",
     medium: "Blender & Zbrush",
     mediaType: "video",

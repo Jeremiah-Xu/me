@@ -37,10 +37,10 @@ export function Header() {
                 <span className="shoot-text-left">Jeremiah</span>
                 {showLogo && (
                   <Image
-                    src="/logo23.png"
+                    src="/logox5.5.png"
                     alt="Logo"
-                    width={48}
-                    height={48}
+                    width={52}
+                    height={52}
                     className="mx-2 transition-opacity duration-500 opacity-100"
                     priority
                   />

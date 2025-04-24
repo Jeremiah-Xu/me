@@ -5,7 +5,6 @@ export async function POST(request: Request) {
   try {
     const { name, email, message } = await request.json();
 
-    // Create a transporter using Gmail
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -14,15 +13,13 @@ export async function POST(request: Request) {
       },
     });
 
-    // Email content
     const mailOptions = {
       from: email,
       to: process.env.RECEIVER_EMAIL,
-      subject: `New message from ${name}`,
+      subject: `New message from ${name} (${email})`,
       text: message,
     };
 
-    // Send the email
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ message: 'Email sent successfully' });
@@ -33,4 +30,4 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
-} 
+}
