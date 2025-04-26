@@ -66,6 +66,7 @@ const projectsData = {
       "Customization & Upgrades",
     ],
     year: "2025",
+    link: "https://jeremiahxu.itch.io/dream-realm-space-escape",
   },
 
   "DR-Concept": {
@@ -77,23 +78,41 @@ const projectsData = {
       {
         src: "/DR/DR-X.png",
         type: "image",
-        display: "half",
+        display: "mid",
         alt: "Detailed concept art"
       },
       {
         src: "/DR/DR-Y.png",
         type: "image",
-        display: "half",
+        display: "mid",
         alt: "Detailed concept art"
       },
       {
         src: "/DR/DR-Z.png",
         type: "image",
-        display: "half",
+        display: "mid",
         alt: "Detailed concept art"
       },
       {
         src: "/DR/DR-D.png",
+        type: "image",
+        display: "mid",
+        alt: "Detailed concept art"
+      },
+      {
+        src: "/DR/DR-landscape1.png",
+        type: "image",
+        display: "mid",
+        alt: "Detailed concept art"
+      },
+      {
+        src: "/DR/DR-landscape2.jpg",
+        type: "image",
+        display: "mid",
+        alt: "Detailed concept art"
+      },
+      {
+        src: "/DR/DR-landscape3.jpg",
         type: "image",
         display: "half",
         alt: "Detailed concept art"
@@ -119,13 +138,13 @@ const projectsData = {
       {
         src: "/DR/DRZa.png",
         type: "image",
-        display: "half",
+        display: "mid",
         alt: "Detailed concept art Za"
       },
       {
         src: "/DR/DRZc.png",
         type: "image",
-        display: "half",
+        display: "mid",
         alt: "Detailed concept art Zc"
       },
       {
@@ -140,24 +159,18 @@ const projectsData = {
         display: "half",
         alt: "Detailed concept art 7"
       },
-      // {
-      //   src: "/DR/DR-landscape1.png",
-      //   type: "image",
-      //   display: "half",
-      //   alt: "Detailed concept art"
-      // },
-      // {
-      //   src: "/DR/DR-landscape2.jpg",
-      //   type: "image",
-      //   display: "half",
-      //   alt: "Detailed concept art"
-      // },
-      // {
-      //   src: "/DR/DR-landscape3.jpg",
-      //   type: "image",
-      //   display: "full",
-      //   alt: "Detailed concept art"
-      // },
+      {
+        src: "/DR/DRZm+s1.png",
+        type: "image",
+        display: "mid",
+        alt: "Detailed concept art 8"
+      },
+      {
+        src: "Models made with Zrbush and Blender",
+        type: "text",
+        display: "mid",
+        alt: ""
+      },
     ],
     category: "Concept Art",
     technologies: ["Photoshop", "Zbrush", "Blender", "Concept Art"],
@@ -167,7 +180,124 @@ const projectsData = {
       "Landscape Design",
       "Illustration",
     ],
-    year: "2023",
+    year: "2024",
+    link: "https://www.instagram.com/dream_realm_art/",
+  },
+  "Fate-of-Lifrun": {
+    title: "Fate of Lifrun",
+    description: "Defending Greenary against the invading forces",
+    fullDescription:
+      "A Week School Gamejam(Lionjam) project made with Unity.",
+    images: [
+      {
+        src: "/FOL/1.png",
+        type: "image",
+        display: "full",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "https://www.youtube.com/watch?v=P5ABqHAO4Gs",
+        type: "youtube",
+        display: "full",
+        alt: "FOL gameplay video"
+      },
+      {
+        src: "/FOL/48x48 trees1.png",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/48x48 trees2.png",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/48x48 trees3.png",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/48x48 trees4.png",
+        type: "image",
+        display: "mid",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/a.png",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/s.png",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/w.png",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+
+      {
+        src: "/FOL/1.gif",
+        type: "image",
+        display: "extra-small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/2.gif",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/3.gif",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/4.gif",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/5.gif",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src: "/FOL/6.gif",
+        type: "image",
+        display: "small",
+        alt: "FOL gameplay image"
+      },
+      {
+        src:"Assets I originally created with Aesprite",
+        type: "text",
+        display: "half",
+        alt:"Assets"
+      }
+      
+    ],
+    category: "Game",
+    technologies: ["Aesprite", "Unity"],
+    features: [
+      "Game Design",
+      "Animation",
+      "Level Design",
+      "Pixel Art",
+    ],
+    year: "2025",
+    link: "https://anoikis.itch.io/fate-of-lifrun",
   },
 }
 
@@ -203,7 +333,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   }
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="w-[80%] mx-[10%] flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
         <section className="container py-12 relative">
@@ -230,7 +360,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
 
                 <div className="mt-12 flex gap-4">
                   <Button asChild className="bg-neon-blue hover:bg-neon-blue/80 text-black">
-                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Live Demo
                     </a>
@@ -274,42 +404,48 @@ export default async function ProjectPage({ params }: { params: { id: string } }
           {/* Images Section */}
           <section className="space-y-8">
             <h2 className="text-2xl p-10 font-bold">Gallery</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
               {project.images.map((media, index) => (
                 <div p-10="true"
                   key={index}
-                  className={`p-10 relative overflow-hidden rounded-lg ${
-                    media.display === "full" ? "md:col-span-2" : "md:col-span-1"
+                  className={`p-4 relative overflow-hidden rounded-lg ${
+                    media.display === "full"
+                      ? "md:col-span-12"
+                      : media.display === "half"
+                      ? "md:col-span-6"
+                      : media.display === "mid"
+                      ? "md:col-span-3"
+                      : media.display === "small"
+                      ? "md:col-span-2"
+                      : media.display === "extra-small"
+                      ? "md:col-span-1"
+                      : ""
                   }`}
                 >
-                  {media.type === "image" ? (
+                  {media.type === "image" && (
                     <Image
                       src={media.src}
                       alt={media.alt}
                       width={1200}
                       height={800}
-                      className="w-full h-auto object-cover"
+                      className="w-full h-auto object-cover rounded-md"
                     />
-                  ) : media.type === "youtube" ? (
-                    <div className="relative w-full aspect-video">
+                  )}
+                  {media.type === "youtube" && (
+                      <div className="relative w-full pt-[56.25%]">
                       <iframe
-                        src={`https://www.youtube.com/embed/${media.src.split('v=')[1]}`}
-                        className="absolute top-0 left-0 w-full h-full"
-                        frameBorder="0"
+                        src={media.src.replace("watch?v=", "embed/")}
+                        title={media.alt}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                        title={media.alt}
-                      />
+                        className="absolute top-0 left-0 w-full h-full"
+                      ></iframe>
                     </div>
-                  ) : (
-                    <video
-                      src={media.src}
-                      controls
-                      className="w-full h-auto"
-                      poster={media.src.replace('.mp4', '.jpg')}
-                    >
-                      Your browser does not support the video tag.
-                    </video>
+                  )}
+                  {media.type === "text" && (
+                    <div className="font-cyber flex items-center justify-center w-full h-full text-center text-lg">
+                      {media.src || "No text provided."}
+                    </div>
                   )}
                 </div>
               ))}

@@ -19,6 +19,13 @@ const projects = [
     image: "/DR/DRZb.png",
     category: "CONCEPT ART",
   },
+  {
+    id: "Fate-of-Lifrun",
+    title: "Fate of Lifrun (gamejam)",
+    description: "Defending Greenary against the invading forces",
+    image: "/FOL/48x48 trees4.png",
+    category: "GAME",
+  },
 ]
 
 export default function ProjectsPage() {
