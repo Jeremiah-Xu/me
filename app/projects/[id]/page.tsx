@@ -404,11 +404,11 @@ export default async function ProjectPage({ params }: { params: { id: string } }
           {/* Images Section */}
           <section className="space-y-8">
             <h2 className="text-2xl p-10 font-bold">Gallery</h2>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-1">
               {project.images.map((media, index) => (
                 <div p-10="true"
                   key={index}
-                  className={`p-4 relative overflow-hidden rounded-lg ${
+                  className={`p-2 relative overflow-hidden rounded-lg ${
                     media.display === "full"
                       ? "md:col-span-12"
                       : media.display === "half"
