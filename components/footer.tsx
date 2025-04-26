@@ -3,9 +3,9 @@ import { Instagram, Twitter, Github } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="relative w-full z-50 bg-black/80 backdrop-blur-sm">
+    <footer className="w-full z-50 bg-black/80 backdrop-blur-sm">
       <div className="w-full">
-        <div className="w-[90%] mx-[5%] flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between">
+        <div className="mx-[5%] flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col gap-2">
             <p className="text-sm text-muted-foreground">©2025 Jeremiah Xu's Personal Website. All rights reserved.</p>
           </div>

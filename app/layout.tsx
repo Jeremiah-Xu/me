@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: "Jeremiah XU's PersonalWebsite",
+  title: "Jeremiah Xu",
   description: "Futuristic project showcase in cyberpunk style",
   icons: {
     icon: "/logox4.png", // or "/favicon.png"
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={yourFont.variable}>
       <body className="bg-black text-white">
-        <div className="w-[80%] mx-[10%]">
+        <div className="w-[100%] mx-[0%]">
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
             {children}
             <Toaster />

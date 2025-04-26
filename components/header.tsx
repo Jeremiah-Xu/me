@@ -39,8 +39,8 @@ export function Header() {
                   <Image
                     src="/logoxj2.png"
                     alt="Logo"
-                    width={52}
-                    height={52}
+                    width={54}
+                    height={54}
                     className="mx-2 transition-opacity duration-500 opacity-100"
                     priority
                   />

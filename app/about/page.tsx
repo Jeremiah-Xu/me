@@ -257,7 +257,7 @@ export default function AboutPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="w-[80%] mx-[10%] flex min-h-screen flex-col">
       <Header />
       <main className="flex-1 relative">
         <SectionNav sections={sections} />

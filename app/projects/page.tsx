@@ -1,6 +1,7 @@
 import { ProjectCard } from "@/components/project-card"
 import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
+import SplashCursor from "@/components/splashcursor"
 
 
 const projects = [
@@ -22,8 +23,9 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="w-[80%] mx-[10%] flex min-h-screen flex-col">
       <Header />
+      <SplashCursor/>
       <main className="flex-1">
         <section className="container py-12 md:py-24 lg:py-32 relative">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">

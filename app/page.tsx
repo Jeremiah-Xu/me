@@ -36,8 +36,8 @@ export default function Home() {
     
     <div className="flex min-h-screen flex-col">
       <Header />
-      
-      <main className="flex-1">
+      <SplashCursor/>
+      <main className="w-[80%] mx-[10%] flex-1">
         <Hero />
         <section className="container py-12 md:py-24 lg:py-32 relative">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">

@@ -6,7 +6,7 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArtworkCard } from "@/components/artwork-card"
 import { motion } from "framer-motion"
 import Image from "next/image"
-
+import SplashCursor from "@/components/splashcursor"
 interface Artwork {
   id: number
   title: string
@@ -365,8 +365,9 @@ export default function GalleryPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="w-[80%] mx-[10%] flex min-h-screen flex-col">
       <Header />
+      <SplashCursor/>
       <main className="flex-1">
         <section className="container py-12 md:py-24 lg:py-32 relative">
           <div className="absolute top-0 right-0 w-64 h-64 bg-neon-purple/10 rounded-full blur-3xl -z-10"></div>
