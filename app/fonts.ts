@@ -12,27 +12,25 @@ export const yourFont = localFont({
 })
 
 
-export const unboundFont = localFont({
+export const secondFont = localFont({
   src: [
     {
         path: '../public/fonts/UnboundPro-Bold.otf',
-        weight: '800',
         style: 'normal',
     },
   ],
-  variable: '--font-unbound',
+  variable: '--font-second',
 })
 
 
-export const designerFont = localFont({
+export const thirdFont = localFont({
   src: [
     {
-      path: '../public/fonts/Designer.woff',
-      weight: '800',
+      path: '../public/fonts/Orbitron-VariableFont_wght.ttf',
       style: 'normal',
     },
   ],
-  variable: '--font-designer',
+  variable: '--font-third',
 })
 
 

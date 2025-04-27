@@ -8,6 +8,7 @@ import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
+
 export function Header() {
   const pathname = usePathname()
   const [showLogo, setShowLogo] = useState(false)
@@ -96,3 +97,5 @@ export function Header() {
     </>
   )
 }
+
+

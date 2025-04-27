@@ -1,5 +1,5 @@
 import React from "react";
-import SplashCursor from "./SplashCursor";
+import SplashCursor from "./splashcursor";
 
 const withSplashCursor = (WrappedComponent: React.ComponentType) => {
   return (props: any) => (

@@ -315,8 +315,7 @@ export default function AboutPage() {
                     Eton College 2020-2022
                   </p>
                   <p className="text-muted-foreground p-2">
-                    Bachelor of Arts in Visual Arts & Bachelor of Arts in Computer Science
-                    Columbia University, Class of 2026
+                  Columbia University in the City of New York,Bachelor of Arts in Visual Arts & Bachelor of Arts in Computer Science, Class of 2026
                   </p>
                 </div>
               </div>

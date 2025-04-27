@@ -166,7 +166,7 @@ const projectsData = {
         alt: "Detailed concept art 8"
       },
       {
-        src: "Models made with Zrbush and Blender",
+        src: "Models made with Zbrush and Blender",
         type: "text",
         display: "mid",
         alt: ""
@@ -351,26 +351,18 @@ export default async function ProjectPage({ params }: { params: { id: string } }
                 <p className="text-xl text-muted-foreground">{project.description}</p>
                 <p className="mt-6">{project.fullDescription}</p>
 
-                <h2 className="text-2xl font-bold mt-12 text-neon-blue">Features</h2>
-                <ul>
+                <div className="mt-12 relative">
+                <div className="flex items-center justify-between">
+                  <h2 className="text-2xl font-bold text-neon-blue">Features</h2>
+                </div>
+
+                <ul className="mt-4">
                   {project.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
+              </div>
 
-                <div className="mt-12 flex gap-4">
-                  <Button asChild className="bg-neon-blue hover:bg-neon-blue/80 text-black">
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
-                    </a>
-                  </Button>
-
-                  <Button variant="outline" className="border-neon-purple text-neon-purple hover:bg-neon-purple/10">
-                    <Github className="mr-2 h-4 w-4" />
-                    Source Code
-                  </Button>
-                </div>
               </div>
             </div>
 
@@ -397,6 +389,14 @@ export default async function ProjectPage({ params }: { params: { id: string } }
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="flex justify-end pt-20">
+                    <Button asChild className="bg-neon-blue hover:bg-neon-blue/80 text-black">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </a>
+                    </Button>
               </div>
             </div>
           </div>
@@ -443,7 +443,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
                     </div>
                   )}
                   {media.type === "text" && (
-                    <div className="font-cyber flex items-center justify-center w-full h-full text-center text-lg">
+                    <div className=" flex items-center justify-center w-full h-full text-center text-lg">
                       {media.src || "No text provided."}
                     </div>
                   )}
