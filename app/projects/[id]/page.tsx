@@ -172,17 +172,18 @@ const projectsData = {
         alt: ""
       },
       {
-        src:"/videos/DRSvideo.mp4",
-        type: "video",
+        src:"/videos/DRSvideo.gif",
+        type: "image",
         display: "half",
         alt: "DR-Space gameplay video"
       },
       {
-        src:"/videos/DRZsword.mp4",
-        type: "video",
+        src:"/videos/DRZsword.gif",
+        type: "image",
         display: "half",
         alt: "DR-Space gameplay video"
       },
+
 
     ],
     category: "Concept Art",
@@ -464,21 +465,6 @@ export default async function ProjectPage({ params }: { params: { id: string } }
                         allowFullScreen
                         className="absolute top-0 left-0 w-full h-full"
                       ></iframe>
-                    </div>
-                  )}
-                  {media.type === "video" && (
-                    <div className="relative w-full pt-[56.25%]">
-                      <video
-                        src={media.src}
-                        controls
-                        autoPlay
-                        muted
-                        playsInline
-                        poster={media.src.replace('.mp4', '.jpg')}
-                        className="absolute top-0 left-0 w-full h-full"
-                      >
-                        Your browser does not support the video tag.
-                      </video>
                     </div>
                   )}
                   {media.type === "text" && (
