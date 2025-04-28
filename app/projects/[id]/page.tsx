@@ -17,7 +17,7 @@ const projectsData = {
         src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
         type: "youtube",
         display: "full",
-        alt: "DR-Space gameplay video"
+        alt: "DR-Space gameplay video(中国无法访问Youtube, 请使用VPN:或者哔哩哔哩链接:https://www.bilibili.com/video/BV1jDGkzaEZG/?vd_source=fcdc7cf5dcaef5cf806d139c014f9b66)"
       },
       {
         src: "/DRspace/s1.png",
@@ -73,7 +73,7 @@ const projectsData = {
     title: "Dream Realm Concept Art",
     description: "A world shared by all through dreams, yet forgotten upon waking",
     fullDescription:
-      "The main character, Jezza, wields a weapon nicknamed “Coffin”—a mysterious material capable of transforming into any form he can imagine. Unbound by the limitations of the physical world, it grants him near-limitless power. Below are several variations of combat outfits and weapon forms Jezza may equip.",
+      "The main character, Jezza, wields a weapon nicknamed 'Coffin'—a mysterious material capable of transforming into any form he can imagine. Unbound by the limitations of the physical world, it grants him near-limitless power. Below are several variations of combat outfits and weapon forms Jezza may equip.",
     images: [
       {
         src: "/DR/DR-X.png",
@@ -171,6 +171,19 @@ const projectsData = {
         display: "mid",
         alt: ""
       },
+      {
+        src:"/videos/DRSvideo.mp4",
+        type: "video",
+        display: "half",
+        alt: "DR-Space gameplay video"
+      },
+      {
+        src:"/videos/DRZsword.mp4",
+        type: "video",
+        display: "half",
+        alt: "DR-Space gameplay video"
+      },
+
     ],
     category: "Concept Art",
     technologies: ["Photoshop", "Zbrush", "Blender", "Concept Art"],
@@ -432,7 +445,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
                     />
                   )}
                   {media.type === "youtube" && (
-                      <div className="relative w-full pt-[56.25%]">
+                    <div className="relative w-full pt-[56.25%]">
                       <iframe
                         src={media.src.replace("watch?v=", "embed/")}
                         title={media.alt}
@@ -440,6 +453,32 @@ export default async function ProjectPage({ params }: { params: { id: string } }
                         allowFullScreen
                         className="absolute top-0 left-0 w-full h-full"
                       ></iframe>
+                    </div>
+                  )}
+                  {media.type === "bilibili" && (
+                    <div className="relative w-full pt-[56.25%]">
+                      <iframe
+                        src={media.src.replace("/video/", "/player.html?bvid=").replace("/?vd_source=", "&")}
+                        title={media.alt}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute top-0 left-0 w-full h-full"
+                      ></iframe>
+                    </div>
+                  )}
+                  {media.type === "video" && (
+                    <div className="relative w-full pt-[56.25%]">
+                      <video
+                        src={media.src}
+                        controls
+                        autoPlay
+                        muted
+                        playsInline
+                        poster={media.src.replace('.mp4', '.jpg')}
+                        className="absolute top-0 left-0 w-full h-full"
+                      >
+                        Your browser does not support the video tag.
+                      </video>
                     </div>
                   )}
                   {media.type === "text" && (

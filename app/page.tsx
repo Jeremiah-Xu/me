@@ -22,13 +22,13 @@ const projects = [
     image: "/DR/DRZb.png",
     category: "CONCEPT ART",
   },
-  // {
-  //   id: "DR-3D",
-  //   title: "Dream Realm 3D Models",
-  //   description: "3D models and animations for Dream Realm",
-  //   image: "/DR/DRZvideo.mp4",
-  //   category: "3D",
-  // },
+  {
+    id: "Fate-of-Lifrun",
+    title: "Fate of Lifrun (gamejam)",
+    description: "Defending Greenary against the invading forces",
+    image: "/FOL/48x48 trees4.png",
+    category: "GAME",
+  },
 ]
 
 export default function Home() {
