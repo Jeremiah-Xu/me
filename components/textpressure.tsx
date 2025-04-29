@@ -6,6 +6,11 @@ const TextPressure = ({
   // This font is just an example, you should not use it in commercial projects.
   fontUrl = 'https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2',
 
+//   text = 'font-cyber',
+//   fontFamily = 'var(--font-cyberpunk)',
+//   // This font is just an example, you should not use it in commercial projects.
+//   fontUrl = '../public/fonts/pdark.ttf',
+
   width = true,
   weight = true,
   italic = true,
@@ -156,6 +161,7 @@ const TextPressure = ({
         width: '100%',
         height: '100%',
         background: 'transparent',
+        fontFamily: fontFamily,
       }}
     >
       <style>{`

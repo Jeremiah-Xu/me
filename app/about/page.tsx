@@ -286,36 +286,45 @@ export default function AboutPage() {
                     Artist, Creator, and Game Developer
                   </p>
                 </div>
-                <div className="space-y-4 text-muted-foreground p-5">
+                <div className="space-y-4 text-sm text-muted-foreground p-5">
                   <p>
-                    I'm a junior at Columbia University, majoring in Computer Science and Visual Arts. As both a technologist and an artist, I split my time navigating two creative paths: one grounded in traditional fine arts—oil painting, drawing, and mixed media—and the other in digital expressions-Game Concept Art, 3D, and VR.
+                  I am a multidisciplinary artist. As a junior at Columbia University, majoring in Computer Science and Visual Arts, my art navigates two creative paths: one grounded in traditional fine arts—oil painting, drawing, and mixed media—and the other in digital expressions such as game concept art and 3D modeling.
                   </p>
                   <p>
-                    My visual work shifts fluidly between introspection and imagination. I'm especially drawn to oil paint and conte crayon, captivated by their expressive textures, directional strokes, and the atmosphere they help create. I find beauty in the movement, emotion, and personality that emerge through their tactile qualities.
+                  Though these paths diverge in medium, they are unified by the themes I explore. My visual work moves fluidly between introspection and imagination. I delve deeply into personal narratives—such as the complexities of the seven deadly sins and their reflections in human nature—while also bringing to life surreal and fantastical concepts, like dragons emerging from the human soul. This duality between the inward and the otherworldly fuels my practice, pushing the boundaries of how art can represent the inner and outer dimensions of experience.
                   </p>
                   <p>
-                    In addition to my studio practice, I'm a front-end developer who builds interactive websites and data visualizations. I'm also diving into independent game development—dreaming of becoming a "god" of future virtual worlds, where art and code converge to shape entirely new realities.
+                  In traditional media, I am particularly drawn to oil paint and conte crayon for their tactile textures and expressive potential. Through deliberate strokes and gestural marks, I express what words often cannot—emotions, movement, and atmosphere. My aim is to create work that contemplates the coexistence of human emotions with elements of myth and dream, visualizing alternate dimensions where reality and fantasy meet.
+                  </p>
+                  <p>
+                  Beyond the studio, I am also a front-end developer who builds interactive websites and data visualizations. My passion for technology and design extends into independent game development, where 3D modeling and animation allow me to construct immersive worlds and characters I imagined. In these digital spaces, I become a kind of architect of the unreal—a “god” of dreamlike environments where art and code converge to shape new realities.
+                  </p>
+                  <p>
+                  This is my art—an imaginative journey through the human experience, where introspection and fantasy coexist, and where each work becomes a portal between the seen and the unseen.
                   </p>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <div className="cyberpunk-border relative h-[500px] w-[400px] overflow-hidden rounded-lg mb-6">
-                  <Image
-                    src="/shared/self.jpg"
-                    alt="Artist portrait"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                {/* <h2 className="text-3xl font-unbounded tracking-tighter sm:text-4xl mb-4">
-                  EDUCATION
-                </h2> */}
+                  <div className="space-y-2 cyberpunk-border relative w-[450px] h-[600px] overflow-hidden rounded-lg mt-60">
+                    <Image
+                      src="/shared/self.jpg"
+                      alt="Artist portrait"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 <div className="text-center border border-neon-blue/30">
                   <p className="text-muted-foreground p-2">
                     Eton College 2020-2022
                   </p>
                   <p className="text-muted-foreground p-2">
-                  Columbia University in the City of New York,Bachelor of Arts in Visual Arts & Bachelor of Arts in Computer Science, Class of 2026
+                    Columbia University in the City of New York
+                  </p>
+                  <p className="text-muted-foreground">
+                    Bachelor of Arts in Visual Arts and Computer Science
+                  </p>
+                  <p className="text-muted-foreground">
+                    Class of 2026
                   </p>
                 </div>
               </div>
@@ -327,7 +336,7 @@ export default function AboutPage() {
         {/* Skills Section */}
         <section id="skills" className="py-16">
           <div className="container">
-            <h2 className="text-3xl font-cyber tracking-tighter sm:text-4xl mb-10">
+            <h2 className="text-3xl font-cyber sm:text-4xl mb-10">
               SKILLS
             </h2>
             
