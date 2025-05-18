@@ -60,7 +60,7 @@ const projectsData = {
     technologies: ["Unity", "Blender", "figma", "Concept Art", "Game Design"],
     features: [
       "Unity Camera System",
-      "Outer Space Environment",
+      "GUI Design",
       "Free-roam flight in 3D space",
       "Shields, hull damage, and repair mechanics",
       "Customization & Upgrades",
@@ -195,7 +195,7 @@ const projectsData = {
       "Illustration",
     ],
     year: "2024",
-    link: "https://www.instagram.com/dream_realm_art/",
+    link: "https://www.bilibili.com/video/BV1jDGkzaEZG/?vd_source=fcdc7cf5dcaef5cf806d139c014f9b66",
   },
   "Fate-of-Lifrun": {
     title: "Fate of Lifrun",
@@ -312,6 +312,31 @@ const projectsData = {
     ],
     year: "2025",
     link: "https://anoikis.itch.io/fate-of-lifrun",
+  },
+
+  "Mech-Survivor": {
+    title: "Mech Survivor",
+    description: "2D Survival Game",
+    fullDescription:
+      "This game expands upon my earlier concept, Dream Realm. Instead of controlling a human within the dream world, players now assume the role of a plane pilot traversing diverse dream dimensions, seeking the elusive cognitive pathway that leads to awakening. The entire game was independently designed and developed.",
+    images: [
+      {
+        src: "/MechSurvivor/1.png",
+        type: "image",
+        display: "full",
+        alt: "game image"
+      },
+    ],
+    category: "GAME",
+    technologies: ["Unity", "PS", "figma", "Concept Art", "Game Design"],
+    features: [
+      "Unity 2D",
+      "GUI Design",
+      "Vampire survivor style game in 2D space",
+      "Customization & Upgrades",
+    ],
+    year: "2025",
+    link: "",
   },
 }
 

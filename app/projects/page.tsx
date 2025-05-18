@@ -26,6 +26,13 @@ const projects = [
     image: "/FOL/48x48 trees4.png",
     category: "GAME",
   },
+  {
+    id: "Mech-Survivor",
+    title: "Mech Survivor (work in progress)",
+    description: "Draw your own mech and fight against the alien forces",
+    image: "/logox5.5.png",
+    category: "GAME",
+  },
 ]
 
 export default function ProjectsPage() {
