@@ -354,7 +354,7 @@ const projectsData = {
     title: "Mech Survivor",
     description: "2D Survival Game",
     fullDescription:
-      "This game expands upon my earlier concept, Dream Realm. Instead of controlling a human within the dream world, players now assume the role of a plane pilot traversing diverse dream dimensions, seeking the elusive cognitive pathway that leads to awakening. The entire game was independently designed and developed.",
+      "...",
     images: [
       {
         src: "/MechSurvivor/1.png",
@@ -370,6 +370,42 @@ const projectsData = {
       "GUI Design",
       "Vampire survivor style game in 2D space",
       "Customization & Upgrades",
+    ],
+    year: "2025",
+    link: "",
+  },
+
+  "Cyber-Runaway": {
+    title: "Cyber Runaway",     
+    description: "2070 Hopeless Girl Escaping from assasination",
+    fullDescription:  
+      "...",
+    images: [
+      {
+        src: "/AI/1.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/AI/2.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/AI/p1.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+    ],
+    category: "GAME",
+    technologies: ["Unity", "PS", "ComfyUI", "Concept Art"],
+    features: [
+      "Concept Art",
+      "AI Assisted Art",
+      "Character Design",
     ],
     year: "2025",
     link: "",

@@ -33,6 +33,13 @@ const projects = [
     image: "/logox5.5.png",
     category: "GAME",
   },
+  {
+    id: "Cyber-Runaway",
+    title: "Cyber Runaway (ai)",
+    description: "2070 Hopeless Girl Escaping from assasination",
+    image: "/AI/1.png",
+    category: "Concept Art",
+  },
 ]
 
 export default function ProjectsPage() {
