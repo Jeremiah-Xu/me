@@ -17,7 +17,13 @@ const projectsData = {
         src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
         type: "youtube",
         display: "full",
-        alt: "DR-Space gameplay video(中国无法访问Youtube, 请使用VPN:或者哔哩哔哩链接:https://www.bilibili.com/video/BV1jDGkzaEZG/?vd_source=fcdc7cf5dcaef5cf806d139c014f9b66)"
+        alt: "DR-Space gameplay video"
+      },
+      {
+        src: "(中国无法访问Youtube, 请使用VPN:或者哔哩哔哩链接:https://www.bilibili.com/video/BV1jDGkzaEZG/?vd_source=fcdc7cf5dcaef5cf806d139c014f9b66)",
+        type: "text",
+        display: "full",
+        alt: ""
       },
       {
         src: "/DRspace/s1.png",
@@ -76,6 +82,18 @@ const projectsData = {
       "The main character, Jezza, wields a weapon nicknamed 'Coffin'—a mysterious material capable of transforming into any form he can imagine. Unbound by the limitations of the physical world, it grants him near-limitless power. Below are several variations of combat outfits and weapon forms Jezza may equip.",
     images: [
       {
+        src: "/DR/GD2.0.png",
+        type: "image",
+        display: "full",
+        alt: "Game Design Concept"
+      },
+      {
+        src: "Character Concept",
+        type: "text",
+        display: "full",
+        alt: ""
+      },
+      {
         src: "/DR/DR-X.png",
         type: "image",
         display: "mid",
@@ -100,6 +118,12 @@ const projectsData = {
         alt: "Detailed concept art"
       },
       {
+        src: "Landscape Concept",
+        type: "text",
+        display: "full",
+        alt: ""
+      },
+      {
         src: "/DR/DR-landscape1.png",
         type: "image",
         display: "mid",
@@ -118,6 +142,12 @@ const projectsData = {
         alt: "Detailed concept art"
       },
       {
+        src: "Weapon Forms + Animation Concept",
+        type: "text",
+        display: "full",
+        alt: ""
+      },
+      {
         src: "/DR/X.jpeg",
         type: "image",
         display: "full",
@@ -134,6 +164,12 @@ const projectsData = {
         type: "image",
         display: "full",
         alt: "Concept art Z"
+      },
+      {
+        src: "3D",
+        type: "text",
+        display: "full",
+        alt: ""
       },
       {
         src: "/DR/DRZa.png",
@@ -166,7 +202,7 @@ const projectsData = {
         alt: "Detailed concept art 8"
       },
       {
-        src: "Models made with Zbrush and Blender",
+        src: "Handcrafted 3D models created from scratch in ZBrush and Blender",
         type: "text",
         display: "mid",
         alt: ""
@@ -441,8 +477,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
           </div>
 
           {/* Images Section */}
-          <section className="space-y-8">
-            <h2 className="text-2xl p-10 font-bold">Gallery</h2>
+          <section className="space-y-8 py-10">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-1">
               {project.images.map((media, index) => (
                 <div p-10="true"
