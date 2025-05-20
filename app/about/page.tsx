@@ -102,6 +102,10 @@ const skillsData: SkillCategory[] = [
         name: "Digital Painting",
         description: "<strong>Photoshop</strong> and <strong>Procreate</strong> — crafting stylized visuals for characters, environments, and narrative assets."
       },
+      {
+        name: "AI Art",
+        description: "<strong>Comfy UI</strong> and <strong>Midjourney</strong> — creating visuals using ai tools."
+      },
     ]
   },
   {

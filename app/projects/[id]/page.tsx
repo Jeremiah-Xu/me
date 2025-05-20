@@ -14,6 +14,84 @@ const projectsData = {
       "This game expands upon my earlier concept, Dream Realm. Instead of controlling a human within the dream world, players now assume the role of a plane pilot traversing diverse dream dimensions, seeking the elusive cognitive pathway that leads to awakening. The entire game was independently designed and developed.",
     images: [
       {
+        src: "/DRspace/home.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s2.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s1.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "Version 1.0",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s3.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s6.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s4.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/s5.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "Version 1.2",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/2.1.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/2.2.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/2.3.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/2.4.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
         src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
         type: "youtube",
         display: "full",
@@ -24,42 +102,6 @@ const projectsData = {
         type: "text",
         display: "full",
         alt: ""
-      },
-      {
-        src: "/DRspace/s1.png",
-        type: "image",
-        display: "half",
-        alt: "game image"
-      },
-      {
-        src: "/DRspace/s2.png",
-        type: "image",
-        display: "half",
-        alt: "game image"
-      },
-      {
-        src: "/DRspace/s3.png",
-        type: "image",
-        display: "half",
-        alt: "game image"
-      },
-      {
-        src: "/DRspace/s6.png",
-        type: "image",
-        display: "half",
-        alt: "game image"
-      },
-      {
-        src: "/DRspace/s4.png",
-        type: "image",
-        display: "half",
-        alt: "game image"
-      },
-      {
-        src: "/DRspace/s5.png",
-        type: "image",
-        display: "half",
-        alt: "game image"
       },
     ],
     category: "GAME",
@@ -246,12 +288,6 @@ const projectsData = {
         alt: "FOL gameplay image"
       },
       {
-        src: "https://www.youtube.com/watch?v=P5ABqHAO4Gs",
-        type: "youtube",
-        display: "full",
-        alt: "FOL gameplay video"
-      },
-      {
         src: "/FOL/48x48 trees1.png",
         type: "image",
         display: "small",
@@ -335,7 +371,13 @@ const projectsData = {
         type: "text",
         display: "half",
         alt:"Assets"
-      }
+      },
+      {
+        src: "https://www.youtube.com/watch?v=P5ABqHAO4Gs",
+        type: "youtube",
+        display: "full",
+        alt: "FOL gameplay video"
+      },
       
     ],
     category: "Game",
@@ -394,11 +436,12 @@ const projectsData = {
         alt: "game image"
       },
       {
-        src: "/AI/p1.png",
+        src: "/AI/p2.png",
         type: "image",
         display: "half",
         alt: "game image"
       },
+
     ],
     category: "GAME",
     technologies: ["Unity", "PS", "ComfyUI", "Concept Art"],
