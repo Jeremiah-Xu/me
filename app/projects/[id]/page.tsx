@@ -92,6 +92,73 @@ const projectsData = {
         alt: "game image"
       },
       {
+        src: "Version 2.0",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/4.1.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/4.2.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/4.3.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/4.4.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/4.5.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/4.6.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/4.7.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/4.10.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/4.8.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/4.9.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+
+      {
         src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
         type: "youtube",
         display: "full",
@@ -108,6 +175,7 @@ const projectsData = {
     technologies: ["Unity", "Blender", "figma", "Concept Art", "Game Design"],
     features: [
       "Unity Camera System",
+      "3D Modelling",
       "GUI Design",
       "Free-roam flight in 3D space",
       "Shields, hull damage, and repair mechanics",
@@ -436,12 +504,29 @@ const projectsData = {
         alt: "game image"
       },
       {
+        src: "Vehicle Design",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
         src: "/AI/p2.png",
         type: "image",
         display: "half",
         alt: "game image"
       },
-
+      {
+        src: "/AI/3.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/AI/4.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
     ],
     category: "GAME",
     technologies: ["Unity", "PS", "ComfyUI", "Concept Art"],
