@@ -157,17 +157,22 @@ const projectsData = {
         display: "half",
         alt: "game image"
       },
-
+      {
+        src: "Version 1.0 Video Demo",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
       {
         src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
         type: "youtube",
-        display: "full",
+        display: "half",
         alt: "DR-Space gameplay video"
       },
       {
         src: "(中国无法访问Youtube, 请使用VPN:或者哔哩哔哩链接:https://www.bilibili.com/video/BV1jDGkzaEZG/?vd_source=fcdc7cf5dcaef5cf806d139c014f9b66)",
         type: "text",
-        display: "full",
+        display: "half",
         alt: ""
       },
     ],
