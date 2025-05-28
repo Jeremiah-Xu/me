@@ -38,6 +38,31 @@ const projectsData = {
         alt: "game image"
       },
       {
+        src: "1. Set up the basic game environment",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "2. Added Player Ship",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "3. Added Basic Shooting Mechanics",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "4. Added Enemy Prefabs",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+
+      {
         src: "/DRspace/s3.png",
         type: "image",
         display: "mid",
@@ -68,6 +93,18 @@ const projectsData = {
         alt: "game image"
       },
       {
+        src: "1. Adjusted Cameras",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },  
+      {
+        src: "2. Fixed Enemy AI",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
         src: "/DRspace/2.1.png",
         type: "image",
         display: "mid",
@@ -93,6 +130,24 @@ const projectsData = {
       },
       {
         src: "Version 2.0",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "1. Updated Level System",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "2. Added Mod Upgrade Shop",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "3. Added Mods Icons and Cards",
         type: "text",
         display: "full",
         alt: "game image"
@@ -158,23 +213,96 @@ const projectsData = {
         alt: "game image"
       },
       {
-        src: "Version 1.0 Video Demo",
+        src: "Version 3.0",
         type: "text",
         display: "full",
         alt: "game image"
       },
       {
-        src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
-        type: "youtube",
-        display: "half",
-        alt: "DR-Space gameplay video"
+        src: "1.Updated UI for 4K HUD display",
+        type: "text",
+        display: "full",
+        alt: "game image"
       },
       {
-        src: "(中国无法访问Youtube, 请使用VPN:或者哔哩哔哩链接:https://www.bilibili.com/video/BV1jDGkzaEZG/?vd_source=fcdc7cf5dcaef5cf806d139c014f9b66)",
+        src: "2. Added New Boss",
         type: "text",
-        display: "half",
-        alt: ""
+        display: "full",
+        alt: "game image"
       },
+      {
+        src: "/DRspace/5.1.png",
+        type: "image",
+        display: "mid",
+        alt: "game image" 
+      },
+      {
+        src: "/DRspace/5.1.5.png",
+        type: "image",
+        display: "mid",
+        alt: "game image" 
+      },
+      {
+        src: "/DRspace/5.2.png",
+        type: "image",
+        display: "mid",
+        alt: "game image" 
+      },    
+      {
+        src: "/DRspace/5.4.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "/DRspace/5.5.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "/DRspace/5.8.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "/DRspace/5.9.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },    
+      {
+        src: "/DRspace/5.10.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/5.11.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },         
+      {
+        src: "/DRspace/5.3.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },         
+
+      // {
+      //   src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
+      //   type: "youtube",
+      //   display: "half",
+      //   alt: "DR-Space gameplay video"
+      // },
+      // {
+      //   src: "(中国无法访问Youtube, 请使用VPN:或者哔哩哔哩链接:https://www.bilibili.com/video/BV1jDGkzaEZG/?vd_source=fcdc7cf5dcaef5cf806d139c014f9b66)",
+      //   type: "text",
+      //   display: "half",
+      //   alt: ""
+      // },
     ],
     category: "GAME",
     technologies: ["Unity", "Blender", "figma", "Concept Art", "Game Design"],
