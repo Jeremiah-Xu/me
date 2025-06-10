@@ -20,11 +20,29 @@ const projectsData = {
         alt: "game image"
       },
       {
+        src: "Demo Video",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
         src: "https://www.youtube.com/watch?v=cRwsOA9nmD8",
         type: "youtube",
         display: "full",
         alt: "game image" 
       },   
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "Development Log",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
       {
         src: "/DRspace/home.png",
         type: "image",
@@ -56,30 +74,17 @@ const projectsData = {
         alt: "game image"
       },
       {
-        src: "1. Set up the basic game environment",
+        src: "1. Set up the basic game environment.",
         type: "text",
-        display: "full",
+        display: "half",
         alt: "game image"
       },
       {
         src: "2. Added Player Ship",
         type: "text",
-        display: "full",
+        display: "half",
         alt: "game image"
       },
-      {
-        src: "3. Added Basic Shooting Mechanics",
-        type: "text",
-        display: "full",
-        alt: "game image"
-      },
-      {
-        src: "4. Added Enemy Prefabs",
-        type: "text",
-        display: "full",
-        alt: "game image"
-      },
-
       {
         src: "/DRspace/s3.png",
         type: "image",
@@ -87,9 +92,21 @@ const projectsData = {
         alt: "game image"
       },
       {
+        src: "3. Added Basic Shooting Mechanics.",
+        type: "text",
+        display: "half",
+        alt: "game image"
+      },
+      {
         src: "/DRspace/s6.png",
         type: "image",
         display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "4. Added Enemy Prefabs",
+        type: "text",
+        display: "half",
         alt: "game image"
       },
       {
@@ -119,13 +136,13 @@ const projectsData = {
       {
         src: "1. Adjusted Cameras",
         type: "text",
-        display: "full",
+        display: "half",
         alt: "game image"
       },  
       {
         src: "2. Fixed Enemy AI",
         type: "text",
-        display: "full",
+        display: "half",
         alt: "game image"
       },
       {
@@ -159,7 +176,7 @@ const projectsData = {
         alt: "game image"
       },
       {
-        src: "Version 2.0",
+        src: "Version 1.5",
         type: "text",
         display: "full",
         alt: "game image"
@@ -167,19 +184,7 @@ const projectsData = {
       {
         src: "1. Updated Level System",
         type: "text",
-        display: "full",
-        alt: "game image"
-      },
-      {
-        src: "2. Added Mod Upgrade Shop",
-        type: "text",
-        display: "full",
-        alt: "game image"
-      },
-      {
-        src: "3. Added Mods Icons and Cards",
-        type: "text",
-        display: "full",
+        display: "half",
         alt: "game image"
       },
       {
@@ -190,12 +195,6 @@ const projectsData = {
       },
       {
         src: "/DRspace/4.2.png",
-        type: "image",
-        display: "mid",
-        alt: "game image"
-      },
-      {
-        src: "/DRspace/4.3.png",
         type: "image",
         display: "mid",
         alt: "game image"
@@ -225,21 +224,33 @@ const projectsData = {
         alt: "game image"
       },
       {
+        src: "/DRspace/4.3.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "2. Added Mod Upgrade Shop",
+        type: "text",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "3. Added Mods Icons and Cards",
+        type: "text",
+        display: "half",
+        alt: "game image"
+      },
+      {
         src: "/DRspace/4.10.png",
         type: "image",
         display: "mid",
         alt: "game image"
       },
       {
-        src: "/DRspace/4.8.png",
-        type: "image",
-        display: "half",
-        alt: "game image"
-      },
-      {
         src: "/DRspace/4.9.png",
         type: "image",
-        display: "half",
+        display: "mid",
         alt: "game image"
       },
       {
@@ -249,7 +260,7 @@ const projectsData = {
         alt: "game image"
       },
       {
-        src: "Version 3.0",
+        src: "Version 2.0",
         type: "text",
         display: "full",
         alt: "game image"
@@ -339,7 +350,7 @@ const projectsData = {
         alt: ""
       },
       {
-        src: "Version 4.0",
+        src: "Version 2.5",
         type: "text",
         display: "full",
         alt: "game image"
@@ -405,17 +416,11 @@ const projectsData = {
         alt: "game image"
       },
       {
-        src: "/DRspace/6.7.png",
+        src: "/DRspace/6.8.png",
         type: "image",
         display: "half",
         alt: "game image"
-      },  
-      {
-        src: "4. Added Motion Blur",
-        type: "text",
-        display: "mid",
-        alt: "game image"
-      },
+      },    
       {
         src: "/DRspace/6.10.png",
         type: "image",
@@ -429,23 +434,41 @@ const projectsData = {
         alt: "game image"
       },   
       {
+        src: "4. Added Motion Blur",
+        type: "text",
+        display: "mid",
+        alt: "game image"
+      },
+      {
         src: "/DRspace/6.13.png",
         type: "image",
         display: "mid",
         alt: "game image"
-      },     
+      },      
       {
-        src: "/DRspace/6.8.png",
+        src: "/DRspace/6.7.png",
         type: "image",
         display: "half",
         alt: "game image"
-      },     
+      },  
       {
         src: "/DRspace/6.12.png",
         type: "image",
         display: "half",
         alt: "game image"
-      },       
+      }, 
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },      
+      {
+        src: "---Version 3.0 ( Still in development )---",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },    
 
       // {
       //   src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
