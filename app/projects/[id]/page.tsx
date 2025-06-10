@@ -14,6 +14,18 @@ const projectsData = {
       "This game expands upon my earlier concept, Dream Realm. Instead of controlling a human within the dream world, players now assume the role of a plane pilot traversing diverse dream dimensions, seeking the elusive cognitive pathway that leads to awakening. The entire game was independently designed and developed.",
     images: [
       {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "https://www.youtube.com/watch?v=cRwsOA9nmD8",
+        type: "youtube",
+        display: "full",
+        alt: "game image" 
+      },   
+      {
         src: "/DRspace/home.png",
         type: "image",
         display: "mid",
@@ -29,6 +41,12 @@ const projectsData = {
         src: "/DRspace/s1.png",
         type: "image",
         display: "mid",
+        alt: "game image"
+      },
+      {
+        src: ".",
+        type: "text",
+        display: "full",
         alt: "game image"
       },
       {
@@ -87,6 +105,12 @@ const projectsData = {
         alt: "game image"
       },
       {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
         src: "Version 1.2",
         type: "text",
         display: "full",
@@ -126,6 +150,12 @@ const projectsData = {
         src: "/DRspace/2.4.png",
         type: "image",
         display: "mid",
+        alt: "game image"
+      },
+      {
+        src: ".",
+        type: "text",
+        display: "full",
         alt: "game image"
       },
       {
@@ -213,6 +243,12 @@ const projectsData = {
         alt: "game image"
       },
       {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
         src: "Version 3.0",
         type: "text",
         display: "full",
@@ -289,7 +325,127 @@ const projectsData = {
         type: "image",
         display: "half",
         alt: "game image"
-      },         
+      },   
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: ""
+      },
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: ""
+      },
+      {
+        src: "Version 4.0",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/6.1.png",
+        type: "image",
+        display: "full",
+        alt: "game image" 
+      },   
+      {
+        src: "/DRspace/6.2.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },   
+      {
+        src: "/DRspace/6.3.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },   
+      {
+        src: "1. Modified Color Palette",
+        type: "text",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/6.4.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },   
+      {
+        src: "/DRspace/6.5.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "2. Added Enemy variants",
+        type: "text",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/6.6.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "/DRspace/6.9.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },    
+      {
+        src: "3. Added Death Explosion Effect",
+        type: "text",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/6.7.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },  
+      {
+        src: "4. Added Motion Blur",
+        type: "text",
+        display: "mid",
+        alt: "game image"
+      },
+      {
+        src: "/DRspace/6.10.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },    
+      {
+        src: "/DRspace/6.11.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },   
+      {
+        src: "/DRspace/6.13.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },     
+      {
+        src: "/DRspace/6.8.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },     
+      {
+        src: "/DRspace/6.12.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },       
 
       // {
       //   src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
@@ -307,9 +463,9 @@ const projectsData = {
     category: "GAME",
     technologies: ["Unity", "Blender", "figma", "Concept Art", "Game Design"],
     features: [
-      "Unity Camera System",
       "3D Modelling",
       "GUI Design",
+      "Unity Camera System",
       "Free-roam flight in 3D space",
       "Shields, hull damage, and repair mechanics",
       "Customization & Upgrades",
