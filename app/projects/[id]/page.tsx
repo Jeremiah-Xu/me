@@ -26,7 +26,7 @@ const projectsData = {
         alt: "game image"
       },
       {
-        src: "https://www.youtube.com/watch?v=cRwsOA9nmD8",
+        src: "https://www.youtube.com/watch?v=vcT65BCcmpA",
         type: "youtube",
         display: "full",
         alt: "game image" 
