@@ -12,7 +12,7 @@ const projects = [
     id: "DR-Space",
     title: "Dream Realm Space Escape",
     description: "Space Fighter Game",
-    image: "/DRspace/coverplane.png",
+    image: "/DRspace/6.12.png",
     category: "GAME",
   },
   {

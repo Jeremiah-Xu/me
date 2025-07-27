@@ -462,13 +462,128 @@ const projectsData = {
         type: "text",
         display: "full",
         alt: "game image"
-      },      
+      },    
       {
-        src: "---Version 3.0 ( Still in development )---",
+        src: ".",
         type: "text",
         display: "full",
         alt: "game image"
+      },   
+      {
+        src: "---Version 3.0 (Demo)---",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      },   
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "game image"
+      }, 
+      {
+        src: "/DRspace/7.5.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "/DRspace/7.6.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "Home & Tutorial ",
+        type: "text",
+        display: "mid",
+        alt: "text"
+      }, 
+      {
+        src: "/DRspace/7.1.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      }, 
+      {
+        src: "/DRspace/7.2.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },   
+      {
+        src: "/DRspace/7.7.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "/DRspace/7.8.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      }, 
+      {
+        src: "/DRspace/7.9.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      }, 
+      {
+        src: "New Levels & Enemies",
+        type: "text",
+        display: "mid",
+        alt: "text"
+      }, 
+      {
+        src: "/DRspace/7.10.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "/DRspace/7.11.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
       },    
+      {
+        src: "/DRspace/7.12.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "New landscapes & Environments",
+        type: "text",
+        display: "mid",
+        alt: "text"
+      },   
+      {
+        src: "/DRspace/7.13.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },  
+      {
+        src: "Abilties and Special power ups",
+        type: "text",
+        display: "mid",
+        alt: "text"
+      },   
+      {
+        src: "/DRspace/7.3.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },  
+      {
+        src: "/DRspace/7.4.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },   
+
 
       // {
       //   src: "https://www.youtube.com/watch?v=MpCNEPYQn_c",
@@ -494,7 +609,7 @@ const projectsData = {
       "Customization & Upgrades",
     ],
     year: "2025",
-    link: "https://jeremiahxu.itch.io/dream-realm-space-escape",
+    link: "https://jezxaxu.itch.io/drealm?secret=lMOg2fENU2IRRk7GxHrx46tvWE",
   },
 
   "DR-Concept": {
@@ -653,7 +768,7 @@ const projectsData = {
       "Illustration",
     ],
     year: "2024",
-    link: "https://www.bilibili.com/video/BV1jDGkzaEZG/?vd_source=fcdc7cf5dcaef5cf806d139c014f9b66",
+    link: "",
   },
   "Fate-of-Lifrun": {
     title: "Fate of Lifrun",
@@ -942,12 +1057,19 @@ export default async function ProjectPage({ params }: { params: { id: string } }
                 </div>
               </div>
               <div className="flex justify-end pt-20">
-                    <Button asChild className="bg-neon-blue hover:bg-neon-blue/80 text-black">
+                {project.link ? (
+                  <Button asChild className="bg-neon-blue hover:bg-neon-blue/80 text-black">
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Live Demo
                     </a>
-                    </Button>
+                  </Button>
+                ) : (
+                  <div className="text-center p-4 border border-yellow-500/30 rounded-lg bg-yellow-500/10">
+                    <p className="text-yellow-400 text-sm font-medium">No live demo available currently</p>
+                    <p className="text-yellow-300/70 text-xs mt-1">Check back later for updates</p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
