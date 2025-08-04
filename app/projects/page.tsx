@@ -27,6 +27,13 @@ const projects = [
     category: "GAME",
   },
   {
+    id: "Magic-in-Loop",
+    title: "Magic in Loop (GMTK Game Jam 2025)",
+    description: "Strategic rune-based combat game",
+    image: "/MIL/2.png",
+    category: "GAME",
+  },
+  {
     id: "Mech-Survivor",
     title: "Mech Survivor (work in progress)",
     description: "Draw your own mech and fight against the alien forces",

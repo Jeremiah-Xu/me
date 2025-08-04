@@ -965,6 +965,69 @@ const projectsData = {
     year: "2025",
     link: "",
   },
+
+  "Magic-in-Loop": {
+    title: "Magic in Loop",
+    description: "Strategic rune-based combat game submitted to GMTK Game Jam 2025",
+    fullDescription:
+      "A strategic puzzle game where players draw magical loops using different rune types to defeat enemies. Each rune type has unique abilities - Fire burns grass for extra collection, Water washes enclosed runes, Grass heals, Dark increases spawn rates, Arcane provides ink, and Light transforms into your most common element. Players must strategically group elements, use counter mechanics, and manage their ink supply to create powerful formations and defeat all enemies.",
+    images: [
+      {
+        src: "Game Overview",
+        type: "text",
+        display: "full",
+        alt: "Magic in Loop overview"
+      },
+      {
+        src: "How to Play",
+        type: "text",
+        display: "full",
+        alt: "Game instructions"
+      },
+      {
+        src: "https://www.youtube.com/watch?v=r3ayax-rgho",
+        type: "youtube",
+        display: "full",
+        alt: "Magic in Loop gameplay video"
+      },
+      {
+        src: "/MIL/3.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },      
+      {
+        src: "/MIL/4.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/MIL/5.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+      {
+        src: "/MIL/6.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },
+    ],
+    category: "GAME",
+    technologies: ["Unity", "C#", "Aseprite", "Audacity", "Game Design"],
+    features: [
+      "Strategic Rune-Based Combat",
+      "Element Counter System",
+      "Ink Management Mechanics",
+      "Special Rune Abilities",
+      "Formation-Based Damage",
+      "Real-time Strategy Gameplay",
+    ],
+    year: "2025",
+    link: "https://jezxaxu.itch.io/magicinloop",
+  },
 }
 
 export async function generateStaticParams() {
