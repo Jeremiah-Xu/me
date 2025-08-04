@@ -968,7 +968,7 @@ const projectsData = {
 
   "Magic-in-Loop": {
     title: "Magic in Loop",
-    description: "Strategic rune-based combat game submitted to GMTK Game Jam 2025",
+    description: "Strategic rune-based combat game (GMTK Game Jam 2025)",
     fullDescription:
       "A strategic puzzle game where players draw magical loops using different rune types to defeat enemies. Each rune type has unique abilities - Fire burns grass for extra collection, Water washes enclosed runes, Grass heals, Dark increases spawn rates, Arcane provides ink, and Light transforms into your most common element. Players must strategically group elements, use counter mechanics, and manage their ink supply to create powerful formations and defeat all enemies.",
     images: [
@@ -979,7 +979,7 @@ const projectsData = {
         alt: "Magic in Loop overview"
       },
       {
-        src: "How to Play",
+        src: "Try it out on: https://jezxaxu.itch.io/magicinloop",
         type: "text",
         display: "full",
         alt: "Game instructions"
