@@ -583,6 +583,41 @@ const projectsData = {
         display: "half",
         alt: "game image"
       },   
+      {
+        src: "Combat Footages",
+        type: "text",
+        display: "half",
+        alt: "Local video section"
+      },
+      {
+        src: "/videos/DR 8.5.mp4",
+        type: "video",
+        display: "half",
+        alt: "DR-Space gameplay video"
+      },
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "Local video section"
+      },
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "Local video section"
+      },
+      {
+        src: "Full Demo in progress",
+        type: "text",
+        display: "full",
+        alt: "Local video section"
+      },      {
+        src: "Expected date: September 2025",
+        type: "text",
+        display: "full",
+        alt: "Local video section"
+      },
 
 
       // {
@@ -1014,6 +1049,18 @@ const projectsData = {
         display: "half",
         alt: "game image"
       },
+      {
+        src: "Local Video Example",
+        type: "text",
+        display: "full",
+        alt: "Local video section"
+      },
+      {
+        src: "/videos/magic-in-loop-gameplay.mp4",
+        type: "video",
+        display: "full",
+        alt: "Magic in Loop gameplay video"
+      },
     ],
     category: "GAME",
     technologies: ["Unity", "C#", "Aseprite", "Audacity", "Game Design"],
@@ -1186,6 +1233,18 @@ export default async function ProjectPage({ params }: { params: { id: string } }
                         allowFullScreen
                         className="absolute top-0 left-0 w-full h-full"
                       ></iframe>
+                    </div>
+                  )}
+                  {media.type === "video" && (
+                    <div className="relative w-full">
+                      <video
+                        src={media.src}
+                        controls
+                        className="w-full h-auto rounded-md"
+                        preload="metadata"
+                      >
+                        Your browser does not support the video tag.
+                      </video>
                     </div>
                   )}
                   {media.type === "text" && (
