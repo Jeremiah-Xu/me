@@ -590,8 +590,8 @@ const projectsData = {
         alt: "Local video section"
       },
       {
-        src: "/videos/DR 8.5.mp4",
-        type: "video",
+        src: "https://www.youtube.com/watch?v=GsCBgdvd0dM",
+        type: "youtube",
         display: "half",
         alt: "DR-Space gameplay video"
       },
@@ -1048,18 +1048,6 @@ const projectsData = {
         type: "image",
         display: "half",
         alt: "game image"
-      },
-      {
-        src: "Local Video Example",
-        type: "text",
-        display: "full",
-        alt: "Local video section"
-      },
-      {
-        src: "/videos/magic-in-loop-gameplay.mp4",
-        type: "video",
-        display: "full",
-        alt: "Magic in Loop gameplay video"
       },
     ],
     category: "GAME",
