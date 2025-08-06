@@ -26,7 +26,7 @@ const projectsData = {
         alt: "game image"
       },
       {
-        src: "https://www.youtube.com/watch?v=vcT65BCcmpA",
+        src: "https://www.youtube.com/watch?v=Xbz1-aY3eTk",
         type: "youtube",
         display: "full",
         alt: "game image" 
@@ -583,18 +583,6 @@ const projectsData = {
         display: "half",
         alt: "game image"
       },   
-      {
-        src: "Combat Footages",
-        type: "text",
-        display: "half",
-        alt: "Local video section"
-      },
-      {
-        src: "https://www.youtube.com/watch?v=GsCBgdvd0dM",
-        type: "youtube",
-        display: "half",
-        alt: "DR-Space gameplay video"
-      },
       {
         src: ".",
         type: "text",
