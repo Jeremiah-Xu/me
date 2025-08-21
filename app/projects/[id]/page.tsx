@@ -20,7 +20,7 @@ const projectsData = {
         alt: "game image"
       },
       {
-        src: "Demo Video",
+        src: "Demo Video(youtube视频需要vpn）",
         type: "text",
         display: "full",
         alt: "game image"
@@ -558,7 +558,19 @@ const projectsData = {
         type: "text",
         display: "mid",
         alt: "text"
-      },   
+      },  
+      {
+        src: "/DRspace/7.3.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },  
+      {
+        src: "/DRspace/7.4.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },    
       {
         src: "/DRspace/7.13.png",
         type: "image",
@@ -572,17 +584,18 @@ const projectsData = {
         alt: "text"
       },   
       {
-        src: "/DRspace/7.3.png",
-        type: "image",
-        display: "half",
-        alt: "game image"
-      },  
-      {
-        src: "/DRspace/7.4.png",
+        src: "/DRspace/s7.png",
         type: "image",
         display: "half",
         alt: "game image"
       },   
+      {
+        src: "/DRspace/s8.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },   
+      
       {
         src: ".",
         type: "text",
