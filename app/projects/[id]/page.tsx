@@ -594,8 +594,91 @@ const projectsData = {
         type: "image",
         display: "mid",
         alt: "game image"
+      }, 
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "Local video section"
+      },
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "Local video section"
+      },  
+      {
+        src: "Version 4.0",
+        type: "text",
+        display: "full",
+        alt: "Local video section"
+      },
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "Local video section"
+      },
+      {
+        src: ".",
+        type: "text",
+        display: "full",
+        alt: "Local video section"
+      }, 
+      {
+        src: "/DRspace/8.1.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
       },   
-      
+      {
+        src: "/DRspace/8.2.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },   
+      {
+        src: "/DRspace/8.3.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },   
+      {
+        src: "/DRspace/8.4.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },   
+      {
+        src: "/DRspace/8.5.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },  
+      {
+        src: "/DRspace/8.8.png",
+        type: "image",
+        display: "mid",
+        alt: "game image"
+      },   
+      {
+        src: "New Levels and Bosses",
+        type: "text",
+        display: "mid",
+        alt: "text"
+      },  
+      {
+        src: "/DRspace/8.6.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },   
+      {
+        src: "/DRspace/8.7.png",
+        type: "image",
+        display: "half",
+        alt: "game image"
+      },   
       {
         src: ".",
         type: "text",
@@ -607,14 +690,14 @@ const projectsData = {
         type: "text",
         display: "full",
         alt: "Local video section"
-      },
+      }, 
       {
         src: "Full Demo in progress",
         type: "text",
         display: "full",
         alt: "Local video section"
       },      {
-        src: "Expected date: September 2025",
+        src: "Expected date: December 2025",
         type: "text",
         display: "full",
         alt: "Local video section"
