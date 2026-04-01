@@ -20,13 +20,13 @@ const projectsData = {
         alt: "game image"
       },
       {
-        src: "Demo Video(youtube视频需要vpn）",
+        src: "Demo Video",
         type: "text",
         display: "full",
         alt: "game image"
       },
       {
-        src: "https://www.youtube.com/watch?v=Xbz1-aY3eTk",
+        src: "https://www.youtube.com/watch?v=8FEe7-fg5mg",
         type: "youtube",
         display: "full",
         alt: "game image" 
